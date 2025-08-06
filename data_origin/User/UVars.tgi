@@ -1,0 +1,26 @@
+[Vars]
+{
+	int	TerrainQuadSize = 1
+	float	CameraScaleZoom = 2.600000
+	flag	ViewShowElapsedGameTime = true
+	flag	CameraRotate = true
+	int	ResolutionX = 2560
+	int	ResolutionY = 1600
+	flag	ResolutionWindowed = true
+	flag	ResolutionCoopFullscreenMode = true
+	int	UIMessageLogMaximumLines = 15
+	int	UIMessageLogFadeTime = 20000
+	flag	UIEventFilterEngagementMessages = true
+	float	AudioMainVolume = 0.506306
+	float	Audio2DVolume = 1.000000
+	float	Audio3DVolume = 1.000000
+	float	AudioSpeechVolume = 1.000000
+	float	AudioMusicVolume = 0.000000
+	flag	EditorNewMapAutoDoodify = false
+	int	LastFilmIndex = 17
+	flag	MetaGameUIShowHelpPopup = false
+	int	AFKTime = 30
+	flag	FirstRun = false
+	flag	PerformanceDisableDecals = false
+	flag	UICampaignConfirmDependentCampaign = false
+}
