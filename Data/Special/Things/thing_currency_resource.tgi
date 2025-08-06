@@ -1,0 +1,57 @@
+[Template ThingMoneyBox Template=Actor]
+{
+	name = "#thing_currency_resource_name"
+	category = UNIT
+	
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+	
+	[Placement]
+	placement_group_IDS = group_special
+
+	[View]
+	{
+		resource_prefix = ThingCurrencyResource/ThingCurrencyResource
+		shadow_type = none
+		shadow_texture = null
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+    	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 1
+					
+		soft_shape = RECT
+		rect_width = 1
+		rect_height = 1
+	}
+}
+
+[Thing template=ThingMoneyBox]
+{
+	IDS = thing_currency_resource
+
+	[EconomyComponent]
+	{
+		[Production]
+		money = 20
+	}
+}
+
+[Thing template=ThingMoneyBox]
+{
+	IDS = thing_currency_resource_rmc
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = tech_military_surplus2
+	}
+}

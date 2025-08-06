@@ -1,0 +1,62 @@
+[Thing Template=AAGEROrganizationMobile]
+{	
+	IDS = regiment_ger_halftrack2
+	name = "#regiment_ger_halftrack_name"
+	editor_name = "#regiment_ger_halftrack_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 35
+		
+		[Upkeep]
+		ammo = 5
+		oil = 5
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GER/GERHalftrack/GERHalftrack
+		icon = /UI/Game/RegimentButtons/IconHalftrack.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_light
+		recruit_time = 15
+		recruit_full = true
+
+		[Slot]	;; front
+		element_IDS = ger_halftrack
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_car_armored_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = mechanized_company
+        
+        [Property]
+		property_IDS = recon	
+		
+		[Property]
+		property_IDS = trailblazing	
+	}
+}
