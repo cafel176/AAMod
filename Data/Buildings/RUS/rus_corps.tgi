@@ -157,6 +157,18 @@
 				money = 150
 			}
 		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
 	}	
 
 	[Size]
@@ -307,6 +319,82 @@
 
 		[RecruitActor]
 		actor_ids = regiment_rus_hq_armor
+
+		[RecruitActor]
+		actor_ids = rus_truck_engineer
+		
+		[RecruitActor]
+		actor_ids = rus_truck_motor
+
+		[RecruitActor]
+		actor_ids = rus_truck_artillery
+		
+		[RecruitActor]
+		actor_ids = rus_truck_airfield
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = rus_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = rus_truck_oil
+	}	
+}
+
+[Thing Template=RUScorpsHQ]
+{
+	IDS = rus_corps2
+	name = "#rus_corps_Thing_name"
+	editor_name = "#rus_corps_Thing_editor_name"
+	
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_armor_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil	
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_rus_hq_armor2
+
+		[RecruitActor]
+		actor_ids = rus_truck_corps2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
 
 		[RecruitActor]
 		actor_ids = rus_truck_engineer

@@ -372,6 +372,68 @@
 	}	
 }
 
+
+[Thing Template=JPNcorpsHQ]
+{
+	IDS = jpn_corps2
+	name = "#jpn_corps_Thing_name"
+	editor_name = "#jpn_corps_Thing_editor_name"
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil	
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_hq_armor2
+
+		[RecruitActor]
+		actor_ids = jpn_truck_corps2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = jpn_truck_engineer
+		
+		[RecruitActor]
+		actor_ids = jpn_truck_motor
+
+		[RecruitActor]
+		actor_ids = jpn_truck_artillery
+		
+		[RecruitActor]
+		actor_ids = jpn_truck_airfield
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = jpn_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = jpn_truck_oil
+	}	
+}
+
 ;; DYNAMIC CAMPAIGN
 
 [Thing Template=JPNcorpsHQ]

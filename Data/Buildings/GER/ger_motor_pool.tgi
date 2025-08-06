@@ -93,20 +93,21 @@
 				money = 100
 			}
 		}
-			
-		[ResearchItem]
+	}
+
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
 		{
-			property_IDS = tech_tank_king_tiger
-			type = GLOBAL
-			research_time = 60
-			
-			required_properties = tech_heavy_tank
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
+			creation_offset = 0.0, 0.3
+			deployment_offset = -10.0, 0.3
 		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_corps2
 	}
 
 	[Size]

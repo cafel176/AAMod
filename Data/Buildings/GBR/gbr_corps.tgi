@@ -387,6 +387,82 @@
 	}
 }
 
+[Thing Template=GBRcorpsHQ]
+{
+	IDS = gbr_corps2
+	name = "#gbr_corps_Thing_name"
+	editor_name = "#gbr_corps_Thing_editor_name"
+	
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_armor_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil	
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_hq_armor2
+
+		[RecruitActor]
+		actor_ids = gbr_truck_corps2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = gbr_truck_engineer
+		
+		[RecruitActor]
+		actor_ids = gbr_truck_motor
+
+		[RecruitActor]
+		actor_ids = gbr_truck_artillery
+
+		[RecruitActor]
+		actor_ids = gbr_truck_airfield
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = gbr_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = gbr_truck_oil
+	}
+}
+
 ;; DYNAMIC CAMPAIGN
 
 [Thing Template=GBRcorpsHQ]

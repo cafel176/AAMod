@@ -1,7 +1,7 @@
-/**************************************************************************
+ï»¿/**************************************************************************
 
 template_unit_AA.tgi
-Copyright © 2003 TimeGate Studios
+Copyright ?2003 TimeGate Studios
 
 DESCRIPTION:  templates for AA units.
 
@@ -262,7 +262,7 @@ USAGE:
 
 ;; ---------------------------------- SPA's ----
 
-[Template AAUnitVehicleSPA Template=AAUnitVehicle]
+[Template AAUnitVehicleSPABase Template=AAUnitVehicle]
 {
 	[ElementComponent]
 	morale_value = 18
@@ -318,15 +318,6 @@ USAGE:
 			health_trigger_type = ABSOLUTE_BELOW
 		}
 	}
-	
-	[PerformerComponent]
-	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 37
-		}
-	}
 
 	[Size]
 	{
@@ -338,6 +329,30 @@ USAGE:
 		soft_shape = RECT
 		rect_width = 1.6
 		rect_height = 3.0
+	}
+}
+
+[Template AAUnitVehicleSPA Template=AAUnitVehicleSPABase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 37
+		}
+	}
+}
+
+[Template AAUnitVehicleSPA2 Template=AAUnitVehicleSPABase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 360
+		}
 	}
 }
 
@@ -425,7 +440,7 @@ USAGE:
 }
 
 
-[Template AAUnitVehicleLightTank template=AAUnitVehicleTank]
+[Template AAUnitVehicleLightTankBase template=AAUnitVehicleTank]
 {
 	[MoverComponent]
 	{
@@ -449,15 +464,6 @@ USAGE:
 			health_trigger_type = ABSOLUTE_BELOW
 		}
 	}
-	
-	[PerformerComponent]
-	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 50
-		}
-	}
 
 	[Size]
 	{
@@ -470,7 +476,31 @@ USAGE:
 	}
 }
 
-[Template AAUnitVehicleMediumTank template=AAUnitVehicleTank]
+[Template AAUnitVehicleLightTank template=AAUnitVehicleLightTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 50
+		}
+	}
+}
+
+[Template AAUnitVehicleLightTank2 template=AAUnitVehicleLightTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 360
+		}
+	}
+}
+
+[Template AAUnitVehicleMediumTankBase template=AAUnitVehicleTank]
 {
 	[MoverComponent]
 	{
@@ -494,15 +524,6 @@ USAGE:
 			health_trigger_type = ABSOLUTE_BELOW
 		}
 	}
-	
-	[PerformerComponent]
-	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 37
-		}
-	}
 
 	[Size]
 	{
@@ -518,8 +539,31 @@ USAGE:
 
 }
 
+[Template AAUnitVehicleMediumTank template=AAUnitVehicleMediumTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 37
+		}
+	}
+}
 
-[template AAUnitVehicleHeavyTank template=AAUnitVehicleTank]
+[Template AAUnitVehicleMediumTank2 template=AAUnitVehicleMediumTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 360
+		}
+	}
+}
+
+[template AAUnitVehicleHeavyTankBase template=AAUnitVehicleTank]
 {
 	[MoverComponent]
 	{
@@ -543,15 +587,6 @@ USAGE:
 			health_trigger_type = ABSOLUTE_BELOW
 		}
 	}
-	
-	[PerformerComponent]
-	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 26
-		}
-	}
 
 	[Size]
 	{
@@ -564,6 +599,29 @@ USAGE:
 	}
 }
 
+[template AAUnitVehicleHeavyTank template=AAUnitVehicleHeavyTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 26
+		}
+	}
+}
+
+[template AAUnitVehicleHeavyTank2 template=AAUnitVehicleHeavyTankBase]
+{
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 260
+		}
+	}
+}
 
 ;; ----------------------------- JEEPS / ARMORED CARS ----
 
@@ -1537,6 +1595,33 @@ USAGE:
 	
 }
 
+[Template AAUnitGBRVehicleMediumTank2 Template=AAUnitVehicleMediumTank2]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+	
+	[MoverComponent]
+	{
+		[TrackInfo Template=AATracksMediumTankRight]
+		
+		[TrackInfo Template=AATracksMediumTankLeft]
+	}
+
+	[View]
+	{	
+		[WhenDestroyed Template=FXC_PlaySFX]
+		audio_ids = death_gbr_tank
+		at = SOURCE_GROUND
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}	
+	
+}
+
 [Template AAUnitGBRVehicleHeavyTank Template=AAUnitVehicleHeavyTank]
 {
 	[Placement]
@@ -2181,6 +2266,32 @@ USAGE:
 }
 
 [Template AAUnitJPNVehicleMediumTank Template=AAUnitVehicleMediumTank]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+	
+	[MoverComponent]
+	{
+		[TrackInfo Template=AATracksMediumTankRight]
+		
+		[TrackInfo Template=AATracksMediumTankLeft]
+	}
+
+	[View]
+	{
+		[WhenDestroyed Template=FXC_PlaySFX]
+		audio_ids = death_jpn_tank
+		at = SOURCE_GROUND
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+}
+
+[Template AAUnitJPNVehicleMediumTank2 Template=AAUnitVehicleMediumTank2]
 {
 	[Placement]
 	placement_group_IDS = group_nation_jpn
@@ -2869,6 +2980,32 @@ USAGE:
 	}
 }
 
+[Template AAUnitUSAVehicleMediumTank2 Template=AAUnitVehicleMediumTank2]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+	
+	[MoverComponent]
+	{
+		[TrackInfo Template=AATracksMediumTankRight]
+		
+		[TrackInfo Template=AATracksMediumTankLeft]
+	}
+
+	[View]
+	{
+		[WhenDestroyed Template=FXC_PlaySFX]
+		audio_ids = death_usa_tank
+		at = SOURCE_GROUND
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+}
+
 [Template AAUnitUSAVehicleHeavyTank Template=AAUnitVehicleHeavyTank]
 {
 	[Placement]
@@ -3016,7 +3153,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = usa_fighter_deployed
+		audio_ids = usa_bomber_deployed
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_usa_bomber

@@ -71,6 +71,22 @@
 
 [Thing Template=AAUnitGBRVehicleHQTruckCorp]
 {
+	IDS = gbr_truck_corps2
+	editor_name = "#gbr_truck_corps_Thing_editor_name"
+
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = gbr_corps2
+	}
+
+	[ElementComponent]
+	{
+		required_properties = tech_thing_corp_tech_tankbattle
+	}
+}
+
+[Thing Template=AAUnitGBRVehicleHQTruckCorp]
+{
 	IDS = gbr_truck_corps_dynamic
 	editor_name = "#gbr_truck_corps_dynamic_editor_name"
 

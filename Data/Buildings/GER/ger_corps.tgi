@@ -358,6 +358,73 @@
 	}
 }
 
+[Thing Template=GERcorpsHQ]
+{
+	IDS = ger_corps2
+	name = "#ger_corps_Thing_name"
+	editor_name = "#ger_corps_Thing_editor_name"
+	
+	[EconomyComponent]
+	{
+		[Production]
+		money = 28
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil	
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_hq_armor2
+
+		[RecruitActor]
+		actor_ids = ger_truck_corps2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = ger_truck_engineer
+		
+		[RecruitActor]
+		actor_ids = ger_truck_motor
+
+		[RecruitActor]
+		actor_ids = ger_truck_artillery
+
+		[RecruitActor]
+		actor_ids = ger_truck_airfield
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = ger_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = ger_truck_oil
+	}
+}
+
 ;; DYNAMIC CAMPAIGN
 
 [Thing Template=GERcorpsHQ]

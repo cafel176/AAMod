@@ -95,6 +95,21 @@
 		}
 	}
 
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 0.0, 0.3
+			deployment_offset = -10.0, 0.3
+		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = usa_truck_corps2
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

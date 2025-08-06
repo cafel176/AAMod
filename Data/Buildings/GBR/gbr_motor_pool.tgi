@@ -78,7 +78,7 @@
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 150
+				money = 100
 			}
 		}		
 
@@ -93,6 +93,21 @@
 				money = 100
 			}
 		}
+	}
+
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 0.0, 0.3
+			deployment_offset = -10.0, 0.3
+		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = gbr_truck_corps2
 	}
 
 	[Size]

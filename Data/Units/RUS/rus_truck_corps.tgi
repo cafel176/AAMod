@@ -71,6 +71,23 @@
 
 [Thing Template=AAUnitRUSVehicleHQTruckCorp]
 {
+	IDS = rus_truck_corps2
+	editor_name = "#rus_truck_corps_Thing_editor_name"
+
+	[MobileDeploymentComponent]
+	{
+	
+		unpack_to_actor_ids = rus_corps2
+	}
+
+	[ElementComponent]
+	{
+		required_properties = tech_thing_corp_tech_tankbattle
+	}
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckCorp]
+{
 	IDS = rus_truck_corps_dynamic
 	editor_name = "#rus_truck_corps_dynamic_editor_name"
 
