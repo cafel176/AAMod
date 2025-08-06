@@ -40,12 +40,12 @@
 		
 		;; Can potentially set this to true if you are running on a gf3 or gf4 and are 
 		;; having low framerate.
-		flag RendererDisableCompatabilityCheck = false	
+		flag RendererDisableCompatabilityCheck = true	
 		
 		flag RendererEnableScreenshots = true
 		;; this is a folder within the work depot that screenshots get saved to
 		string RendererScreenshotFolder = Screenshots
-		flag RendererMultithreaded = false	;; [don't mess with this!]
+		flag RendererMultithreaded = true	;; [don't mess with this!]
 		flag RendererPrecacheTextures = true	;; false doesn't work yet
 		flag RendererRemoveNormals = false
 		flag RendererUse32BitDepthBuffer = true
@@ -66,47 +66,51 @@
 
 		int MessageLogMaximumLines = 50
 		flag ResourceCaching = true
-		int MemoryUsageBestGuess = 200000000	;; Guess that we will use about 200 megs
-		float MemoryUsageRefreshTimeS = 60	;; time between updating the cache.
-		
+		;; HR:200000000
+		;; HR:Guess that we will use about 1200 megs
+		int MemoryUsageBestGuess = 1200000000	;; Guess that we will use about (200) megs
+		;; HR:60
+		float MemoryUsageRefreshTimeS = 60	;; time between updating the cache. 30 - (60) - 600
+
 		flag PerformanceDisableDoodads = false
-		flag PerformanceDisableDecals = false
-		
+		;; HR:false
+		flag PerformanceDisableDecals = true
+
 		;; Resource Caching weights: these weights are normalized to percentages of total memory. 
 		;;  E.g. if the weights add up to 200, a weight of 20 would mean use 10% of the total cache.
-		int ResourceCacheTextureRAMWeight = 25
-		int ResourceCacheAudioRAMWeight = 10
-		int ResourceCacheNiAVObjRAMWeight = 30
-		int ResourceCacheNiSeqRAMWeight = 20
-		int ResourceCacheDirectoryRAMWeight = 0
-		int ResourceCacheDataFileRAMWeight = 10
-		int ResourceCacheTextFileRAMWeight = 2
-		int ResourceCacheCursorRAMWeight = 2
-		int ResourceCacheMapRAMWeight = 4
-		int ResourceCacheFilmRAMWeight = 3
-		int ResourceCacheIndexFileRAMWeight = 2
-		int ResourceCacheTextGeometryRAMWeight = 0
-		int ResourceCacheRawFileRAMWeight = 3
-		int ResourceCacheVideoRAMWeight = 0
-		int ResourceCacheTrueTypeRAMWeight = 1
-		int ResourceCachePercentOfTotalRAM = 25
+		int ResourceCacheTextureRAMWeight = 1000;;300;;150
+		int ResourceCacheAudioRAMWeight = 50
+		int ResourceCacheNiAVObjRAMWeight = 360;;180
+		int ResourceCacheNiSeqRAMWeight = 240;;120
+		int ResourceCacheDirectoryRAMWeight = 10
+		int ResourceCacheDataFileRAMWeight = 60;;30
+		int ResourceCacheTextFileRAMWeight = 20;;10
+		int ResourceCacheCursorRAMWeight = 10
+		int ResourceCacheMapRAMWeight = 100;;50
+		int ResourceCacheFilmRAMWeight = 10
+		int ResourceCacheIndexFileRAMWeight = 10
+		int ResourceCacheTextGeometryRAMWeight = 10
+		int ResourceCacheRawFileRAMWeight = 10
+		int ResourceCacheVideoRAMWeight = 5
+		int ResourceCacheTrueTypeRAMWeight = 25
+		int ResourceCachePercentOfTotalRAM = 150;;100
 		
-		int ResourceCacheTextureVRAMWeight = 40
-		int ResourceCacheAudioVRAMWeight = 0
-		int ResourceCacheNiAVObjVRAMWeight = 30
-		int ResourceCacheNiSeqVRAMWeight = 20
+		int ResourceCacheTextureVRAMWeight = 800;;240;;120
+		int ResourceCacheAudioVRAMWeight = 0;;10
+		int ResourceCacheNiAVObjVRAMWeight = 300;;150
+		int ResourceCacheNiSeqVRAMWeight = 200;;100
 		int ResourceCacheDirectoryVRAMWeight = 0
 		int ResourceCacheDataFileVRAMWeight = 0
-		int ResourceCacheTextFileVRAMWeight = 0
+		int ResourceCacheTextFileVRAMWeight = 10
 		int ResourceCacheCursorVRAMWeight = 0
 		int ResourceCacheMapVRAMWeight = 0
 		int ResourceCacheFilmVRAMWeight = 0
 		int ResourceCacheIndexFileVRAMWeight = 0
-		int ResourceCacheTextGeometryVRAMWeight = 0
+		int ResourceCacheTextGeometryVRAMWeight = 10
 		int ResourceCacheRawFileVRAMWeight = 0
 		int ResourceCacheVideoVRAMWeight = 0
-		int ResourceCacheTrueTypeVRAMWeight = 0
-		int ResourceCachePercentOfTotalVRAM = 25
+		int ResourceCacheTrueTypeVRAMWeight = 0;;25
+		int ResourceCachePercentOfTotalVRAM = 150;;100
 
 		flag ResourceNoNiObjects = false
 		flag ResourceNoNiTextures = false
@@ -124,7 +128,7 @@
 
 		;; TerrainQuadSize = 2 is more appropriate.  Going to 1 quadruples
 		;;  memory usage by the terrain geometry
-		int TerrainQuadSize = 1
+		int TerrainQuadSize = 2
 		
 		flag	TerrainTrilinearFilter = true
 	
@@ -140,7 +144,7 @@
 		flag RenderDrawShadows = true
 		int RenderLODShadows = 3		;; 0 - none, 1 - texture, 2 - projected, 3 - stencil
 		float ParticleGeneratePCG = 1		;; 1 = 100%
-		flag RenderDrawFootsteps = true
+		flag RenderDrawFootsteps = false		;; HR:true
 		flag UnitFogSimplified = false		;; true to turn off unit fog
 
 		;; RendererUseRenderLists: better sorting than the standard scene graph for the main camera
@@ -311,7 +315,7 @@
 		;;;;;; diagnostics
 		;; display UI logging (toggleable via hotkey)
 		flag UIDisplayLogging = false
-		int UIWarningMemory = 3000000
+		int UIWarningMemory = 4000000;;HR:3000000
 		float UITextureSwapsRatio = 2
 		flag DebugModelVEs = false
 		
@@ -389,12 +393,12 @@
 		;; Network Settings
 		;; ----------------
 		;;string 		NetworkConnectionType 		= Modem
-		;;string		NetworkLanNickname 		= Player
-		flag		NetworkAutoRefresh 		= false		;; true if server browser refreshes periodically
-		int		NetworkRefreshTime 		= 30		;; periodic refresh of server list (in seconds)
+		string		NetworkLanNickname 		= Player
+		flag		NetworkAutoRefresh 		= true		;; true if server browser refreshes periodically
+		int		NetworkRefreshTime 		= 10		;; periodic refresh of server list (in seconds)
 		flag		NetworkReportGameInProgress	= true		;; true if server is listed while game in progress
 		flag		NetworkFilterSameVersion	= false		;; only show servers with same version
-		flag		NetworkFilterSameGroupRoom	= true		;; only show games in current group room
+		flag		NetworkFilterSameGroupRoom	= false		;; only show games in current group room
 		flag		NetworkFilterFullGames		= false		;; only show non-full games
 		flag		NetworkFilterPlayingGames	= false		;; only show games that are not playing
 
@@ -431,7 +435,7 @@
 		int		GameSpyRoomReListTime			= 2		;; wait time in seconds after failure to re-request room list
 
 		;; set this flag to true to always do NAT negotiation for internet games (for testing)
-		flag	ForceNATNegotiation		= false
+		flag	ForceNATNegotiation		= true
 		
 		;; The map checksum is used with gamespy to verify the correct map (displayed in staging menu)
 		flag	DisplayMapChecksum		= false

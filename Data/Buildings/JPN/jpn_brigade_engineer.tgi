@@ -41,13 +41,13 @@
 
 		[ResearchItem]
 		{
-			property_IDS = tech_oil_production
-			type = GLOBAL
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 150
+				money = 125
 			}
 		}
 				

@@ -217,6 +217,13 @@
 
 			[SpecificRecruitRequest]
 			{
+				property_ids				= armorhq
+				base_priority				= -850
+				hq_type_not_available_bonus	= 900
+			}
+
+			[SpecificRecruitRequest]
+			{
 				property_ids				= engineer_brigade
 				repeat_penalty				= 10000
 			}

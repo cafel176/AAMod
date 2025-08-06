@@ -552,6 +552,8 @@
 	icon = PropertyIcons/IconPropertyMorale.png
 	action_button_icon = TechIcons/IconAdvancedInfantryTraining.png
 	
+	required_properties = org_infantry
+
 	[Modifier Template=AddModifier]
 	attribute = MORALE
 	amount = +1	
@@ -564,6 +566,8 @@
 	icon = PropertyIcons/IconPropertyMorale.png
 	action_button_icon = TechIcons/IconAdvancedArmorTraining.png
 	
+	required_properties = org_tank
+
 	[Modifier Template=AddModifier]
 	attribute = MORALE
 	amount = +3	
@@ -582,6 +586,22 @@
 	{
 		[Production Template=ProductionList]
         	money = 5
+	}
+}
+
+[Property Template=AATechnology]
+{
+	IDS = tech_military_surplus2
+	name = "#properties_technologies_tech_military_surplus_name"
+	icon = PropertyIcons/IconPropertyEconomic.png
+	action_button_icon = TechIcons/IconGearUp.png
+
+	required_properties = money
+	
+	[Modifier Template=ResourceProductionModifier]
+	{
+		[Production Template=ProductionList]
+        	money = 10
 	}
 }
 

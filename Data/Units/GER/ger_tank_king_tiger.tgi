@@ -40,9 +40,10 @@
 	[ElementComponent]
 	{
 		required_structures = ger_motor_pool
-		required_properties = tech_heavy_tank, tech_tank_king_tiger
-	}
-		
+		required_properties = tech_heavy_tank
+		morale_value = 25
+	}	
+
 	[PropertiesComponent]
 	{
 		[Property]
@@ -66,7 +67,7 @@
 			{				
 				name = "#ger_tank_king_tiger_AbilityDefinition_name"
 				recharge_time = 6
-				range = 22
+				range = 24
 				area = 1
 
 				[Effect Template=APDamageEffect]

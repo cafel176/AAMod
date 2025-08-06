@@ -62,6 +62,7 @@
 			client_R = 100%
 			client_B = 100%
 
+			font = small
 			text = ""
 		}
 	}

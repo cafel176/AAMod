@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_actor_ability_AA.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: Defines a specific ability that an actor may use.
 
@@ -58,7 +58,7 @@ smm042004 - created
 
 [Template AASpecialOpAtomicBomb Template=AASpecialOpShared]
 {
-	cost_faction_experience = 2000
+	cost_faction_experience = 3000
 	ability_ids = atomic_bomb	
 }
 

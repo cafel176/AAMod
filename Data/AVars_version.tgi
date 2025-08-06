@@ -5,7 +5,7 @@
 	;; - minor release: incremented for major changes to the product
 	;; - patch level: incremented for each patch
 	;; - internal: (optional) used for internal or beta versions
-	string		Version = 1.0.5.0
+	string		Version = 2025.07.27
 	
 	;; Intro Video Binks
 	string	IntroVideo1 = /Video/Intro/ESRB.bik

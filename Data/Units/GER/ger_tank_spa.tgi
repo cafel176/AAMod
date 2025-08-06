@@ -9,7 +9,8 @@
 	[MoverComponent]
 	{
 		speed_max = 3
-		
+		acceleration = 2
+
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
 			VFX_IDS = start_exhaust_01

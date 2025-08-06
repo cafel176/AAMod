@@ -248,7 +248,7 @@
 	
 	;; kingdom vars
 	int		DefaultKingdomsIndependent = 1
-	int		KingdomsMax = 8
+	int		KingdomsMax = 9
 
 	;;;;;; routing
 	int		RoutRandomCandidates = 20			;; The number of completely random candidates.

@@ -1,7 +1,7 @@
 /**************************************************************************
 
 AVars.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ?2002-2003 TimeGate Studios
 
 DESCRIPTION: Game-independent TGRTSE AVars.
 
@@ -29,7 +29,7 @@ drp012903 - moved game-specific AVars out
 	float WaterOpaqueDepth = 1.5
 	int	VGridCellSize = 4
 	float CameraNearPlane = 1
-	float CameraFarPlane = 512
+	float CameraFarPlane = 99999
 	int CursorDragThreshold = 10
 	float TimingSmoothingConstant = 0.9
 	point3 ReplacementColorDefault = 1,1,1
@@ -38,7 +38,7 @@ drp012903 - moved game-specific AVars out
 
 	;; Renderer
 	point3	RendererDefaultOrientation = 0,-1,0
-	string	RendererDefaultFont = Courier
+	string	RendererDefaultFont = simsun;;Courier(HR)
 	;;			number of megs at which we are not considered a low memory video card
 	int		RendererLowMemoryCutoff = 33
 	
@@ -342,7 +342,7 @@ drp012903 - moved game-specific AVars out
 	string	PathRMCS = RandomMap/
 	string	PathDynamicCampaignSavedGames = DynamicCampaignSave/
 	string  LastFilmName = LastFilm.RFM
-	int FilmRotationQueueSize = 5
+	int FilmRotationQueueSize = 30
 	
 	;; videos
 	string	DefaultVideoResource = Video/blank.bik	
