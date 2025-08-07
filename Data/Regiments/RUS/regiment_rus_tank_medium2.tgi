@@ -36,7 +36,8 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_light
-		
+		recruit_time = 25
+
 		[Slot]	;; front
 		element_IDS = rus_tank_medium
 	
