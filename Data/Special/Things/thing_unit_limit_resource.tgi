@@ -8,6 +8,7 @@
 	{
 		[Production]
 		unit_limit_consumed = 10
+		building_limit_consumed = 10
 	}
 	
 	[Flags]
