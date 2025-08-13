@@ -6,6 +6,9 @@
 		defense = 3
 	}
 	
+	[ElementComponent]
+	resupply_rate = 0.25
+
 	[MoverComponent]
 	{
 		speed_max = 4.5

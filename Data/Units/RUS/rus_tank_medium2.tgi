@@ -32,6 +32,7 @@
 	[ElementComponent]
 	{
 		required_structures = rus_motor_pool
+		resupply_rate = 0.15
 	}
 	
 	[PropertiesComponent]

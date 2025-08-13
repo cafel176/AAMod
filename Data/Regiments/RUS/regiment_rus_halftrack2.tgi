@@ -39,7 +39,7 @@
 		recruit_full = true
 
 		[Slot]	;; front
-		element_IDS = rus_halftrack
+		element_IDS = rus_halftrack2
 	
 		[Slot]	;; support
 		element_IDS = null

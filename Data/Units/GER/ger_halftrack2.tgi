@@ -1,5 +1,7 @@
 [Template GERHalftrack Inherit=AAUnitGERVehicleHalftrack]
 {
+	[ElementComponent]
+	resupply_rate = 0.25
 
 	[BodyComponent]
 	{

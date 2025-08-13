@@ -51,6 +51,7 @@
 	{
 		required_structures = gbr_motor_pool
 		required_properties = tech_tank_flame
+		resupply_rate = 0.15
 	}
 
 	[MoverComponent]

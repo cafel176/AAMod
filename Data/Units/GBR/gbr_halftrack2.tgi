@@ -1,5 +1,8 @@
 [Template GBRHalftrack Inherit=AAUnitGBRVehicleHalftrack]
 {
+	[ElementComponent]
+	resupply_rate = 0.25
+
 	[BodyComponent]
 	{
 		health = 250

@@ -45,13 +45,13 @@
 		element_IDS = rus_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = rus_halftrack
+		element_IDS = rus_halftrack2
 		
 		[Slot]	;; rear guard 3
-		element_IDS = rus_tank_light
+		element_IDS = rus_tank_light2
 	
 		[Slot]	;; flank
-		element_IDS = rus_tank_light
+		element_IDS = rus_tank_light2
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co

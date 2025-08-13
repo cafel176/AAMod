@@ -39,7 +39,7 @@
 		recruit_time = 15
 
 		[Slot]	;; front
-		element_IDS = usa_tank_light
+		element_IDS = usa_tank_light2
 	
 		[Slot]	;; support
 		element_IDS = null

@@ -38,6 +38,7 @@
 	[ElementComponent]
 	{
 		required_structures = jpn_motor_pool	
+		resupply_rate = 0.15
 	}
 
 	[PropertiesComponent]

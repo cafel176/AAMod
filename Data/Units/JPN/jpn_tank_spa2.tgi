@@ -66,6 +66,7 @@
 	{
 		required_structures = jpn_motor_pool,  jpn_brigade_artillery
 		morale_value = 20
+		resupply_rate = 0.1
 	}
 
 	[PerformerComponent]

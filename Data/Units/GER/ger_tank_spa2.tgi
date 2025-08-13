@@ -67,6 +67,7 @@
 		required_structures = ger_brigade_artillery
 		required_properties = tech_heavy_tank
 		morale_value = 20
+		resupply_rate = 0.1
 	}
 
 	[PerformerComponent]

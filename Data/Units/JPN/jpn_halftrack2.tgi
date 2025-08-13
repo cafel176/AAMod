@@ -1,5 +1,8 @@
 [Template JPNHalftrack Template=AAUnitJPNVehicleHalftrack]
 {
+	[ElementComponent]
+	resupply_rate = 0.25
+
 	[BodyComponent]
 	{
 		health = 250

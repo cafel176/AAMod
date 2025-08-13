@@ -39,7 +39,7 @@
 		recruit_time = 25
 
 		[Slot]	;; front
-		element_IDS = ger_tank_medium
+		element_IDS = ger_tank_medium2
 	
 		[Slot]	;; support
 		element_IDS = null

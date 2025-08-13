@@ -39,7 +39,7 @@
 		recruit_full = true
 
 		[Slot]	;; front
-		element_IDS = jpn_tankette
+		element_IDS = jpn_tankette2
 	
 		[Slot]	;; support
 		element_IDS = null
