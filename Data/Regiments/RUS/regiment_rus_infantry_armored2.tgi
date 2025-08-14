@@ -54,7 +54,7 @@
 		element_IDS = rus_tank_light2
 		
 		[Slot]	;; captain
-		element_IDS = rus_tank_co
+		element_IDS = rus_tank_co2
 	}
 	
 	[PropertiesComponent]

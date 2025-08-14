@@ -39,13 +39,13 @@
 		entrenchment_time = 99999
 
 		[Slot]	;; front
-		element_IDS = usa_tank_heavy
+		element_IDS = usa_tank_heavy2
 	
 		[Slot]	;; support
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = usa_tank_co
+		element_IDS = usa_tank_co2
 	}
 	
 	[PropertiesComponent]

@@ -44,7 +44,7 @@
 		element_IDS = usa_halftrack2
 		
 		[Slot]	;; captain
-		element_IDS = usa_tank_co
+		element_IDS = usa_tank_co2
 	}
 	
 	[PropertiesComponent]

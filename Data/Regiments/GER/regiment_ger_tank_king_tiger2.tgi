@@ -39,13 +39,13 @@
 		entrenchment_time = 99999
 
 		[Slot]	;; front
-		element_IDS = ger_tank_king_tiger
+		element_IDS = ger_tank_king_tiger2
 	
 		[Slot]	;; support
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = ger_tank_co
+		element_IDS = ger_tank_co2
 	}
 	
 	[PropertiesComponent]

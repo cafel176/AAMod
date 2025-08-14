@@ -52,7 +52,7 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = gbr_tank_co
+		element_IDS = gbr_tank_co2
 	}
 	
 	[ExperienceComponent template=AAArmorExperienceComponent]
