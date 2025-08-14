@@ -45,6 +45,9 @@
 	name = "#gbr_car_armored_co_Thing_name"
 	editor_name = "#gbr_car_armored_co_Thing_editor_name"
 
+	[ElementComponent]
+	resupply_rate = 0.25
+
 	[BodyComponent]
 	{
 		health = 250

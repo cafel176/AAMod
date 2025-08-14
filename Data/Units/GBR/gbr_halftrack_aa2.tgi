@@ -13,7 +13,8 @@
 	[ElementComponent]
 	{
 		required_structures = gbr_brigade_engineer
-		morale_value = 10
+		morale_value = 15
+		resupply_rate = 0.25
 	}
 
 	[MoverComponent]

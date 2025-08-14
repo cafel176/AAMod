@@ -44,6 +44,7 @@
 	{
 		required_properties = tech_rocket_truck
 		required_structures = rus_brigade_artillery
+		resupply_rate = 0.2
 	}
 	
 	[PropertiesComponent]
