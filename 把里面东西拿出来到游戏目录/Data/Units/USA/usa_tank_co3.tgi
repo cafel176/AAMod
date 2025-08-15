@@ -1,0 +1,125 @@
+
+
+;;---------------------------------------------- USATankCO Unit --------
+
+
+[Thing Template=AAUnitUSAVehicleMediumTank]
+{
+	IDS = usa_tank_co3
+	name = "#usa_tank_co_Thing_name"
+	editor_name = "#usa_tank_co_Thing_editor_name"
+
+	[BodyComponent]
+	{
+		health = 400
+		defense = 15
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 4
+		acceleration = 3
+		turn_radians_per_sec = 2
+		
+		[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_02
+			location = exhaust_point_01	
+	  	}
+	  	
+	  	[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_02
+			location = exhaust_point_02	
+	  	}
+	}
+	
+	[ElementComponent]
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = captain
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+		check_damage_resistance = true
+
+		[Ability template=AATurretAttackLocal]
+		{
+                      		
+			[AbilityDefinition Template=AAMediumTankGun]
+			{				
+				name = "#usa_tank_co_AbilityDefinition_name"
+				recharge_time = 6
+				range = 18
+				area = 1
+								
+				[Effect Template=APDamageEffect]
+				amount = 65
+				
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1	
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_cannon_medium
+			}
+		}
+
+ 
+	}
+
+	[DefenderComponent]
+	{
+		control_range = 12
+	
+		[Ability Template=AAAttackLocal]
+		{
+			
+			
+			[AbilityDefinition Template=AATankMG]
+			{
+				name = "#usa_halftrack_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 2
+
+				recharge_time = 2
+				range = 12
+				
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 14
+			
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_mg_heavy
+
+				[Flags]
+				spell = true
+			}
+
+	
+		
+		}
+	}
+	
+	[View]
+	{
+		resource_prefix = USATankCO/USATankCO
+
+		portrait_ids = usa_tank_co_portrait
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = USATankCO/USATankCORecoil1.kf
+		}
+	}
+}

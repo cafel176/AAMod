@@ -1,0 +1,59 @@
+[Thing Template=AARUSOrganizationArtillery]
+{	
+	IDS = regiment_rus_halftrack_artillery3
+	name = "#regiment_rus_halftrack_artillery_name"
+	editor_name = "#regiment_rus_halftrack_artillery_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 180
+		
+		[Upkeep]
+		ammo = 15
+		oil = 10
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_mechanized
+
+		[Property]
+		property_ids = artillery_company
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSHalftrack/RUSHalftrack
+		icon = /UI/Game/RegimentButtons/IconHalftrackArtillery.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = rus_halftrack3
+	
+		[Slot]	;; support
+		element_IDS = rus_halftrack_artillery3
+		
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co3
+	}
+	
+	[ExperienceComponent template=AAMechanizedExperienceComponent]
+}

@@ -1,0 +1,59 @@
+[Thing Template=AAGBROrganizationArtillery]
+{	
+	IDS = regiment_gbr_halftrack_artillery3
+	name = "#regiment_gbr_halftrack_artillery_name"
+	editor_name = "#regiment_gbr_halftrack_artillery_editor_name"
+	
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 180
+		
+		[Upkeep]
+		ammo = 15
+		oil = 10
+	}
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = artillery_company
+
+		[Property]
+		property_IDS = org_mechanized
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GBR/GBRHalftrackArtillery/GBRHalftrackArtillery
+		icon = /UI/Game/RegimentButtons/IconHalftrackArtillery.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_vehicle_deployed
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_artillery_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_artillery_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_artillery_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = gbr_halftrack3
+	
+		[Slot]	;; support
+		element_IDS = gbr_halftrack_artillery3
+		
+		[Slot]	;; captain
+		element_IDS = gbr_car_armored_co3
+	}
+	
+	[ExperienceComponent template=AAMechanizedExperienceComponent]
+}

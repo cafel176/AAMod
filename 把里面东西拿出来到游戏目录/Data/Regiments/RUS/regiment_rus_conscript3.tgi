@@ -1,0 +1,60 @@
+[Thing Template=AARUSOrganizationInfantry]
+{
+	IDS = regiment_rus_conscript3
+	name = "#regiment_rus_conscript_name"
+	editor_name = "#regiment_rus_conscript_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 40
+		
+		[Upkeep]
+		ammo = 5
+                	oil = 2
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSConscript/RUSConscript
+		icon = /UI/Game/RegimentButtons/IconRUSConscript.png
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_conscript_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_conscript_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_conscript_attack
+	}		
+	
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = rus_conscript3
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_conscript3
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_conscript3
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_conscript3
+	
+		[Slot]	;; flank
+		element_IDS = rus_conscript3
+		
+		[Slot]	;; captain
+		element_IDS = rus_infantry_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+}
