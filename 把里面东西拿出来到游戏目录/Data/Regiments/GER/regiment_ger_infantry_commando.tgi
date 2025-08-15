@@ -43,12 +43,6 @@
 
 	}
 	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = infantry_company
-	}
-	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry

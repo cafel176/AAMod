@@ -49,7 +49,7 @@
 		[Property]
 		property_ids = antiaircraft_company
 
-				[Property]
+		[Property]
 		property_IDS = trailblazing
 	}
 }

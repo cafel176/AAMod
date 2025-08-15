@@ -42,14 +42,14 @@
 		;; having low framerate.
 		flag RendererDisableCompatabilityCheck = true	
 		
-		flag RendererEnableScreenshots = true
+		flag RendererEnableScreenshots = false
 		;; this is a folder within the work depot that screenshots get saved to
 		string RendererScreenshotFolder = Screenshots
 		flag RendererMultithreaded = true	;; [don't mess with this!]
 		flag RendererPrecacheTextures = true	;; false doesn't work yet
 		flag RendererRemoveNormals = false
 		flag RendererUse32BitDepthBuffer = true
-		int  FontPreferredTextureSize = 256
+		int  FontPreferredTextureSize = 128
 		flag FontWriteTextures = false
 		flag TextBoundsVisible = false
 		flag UITextBoundsVisible = false
@@ -66,51 +66,47 @@
 
 		int MessageLogMaximumLines = 50
 		flag ResourceCaching = true
-		;; HR:200000000
-		;; HR:Guess that we will use about 1200 megs
-		int MemoryUsageBestGuess = 1200000000	;; Guess that we will use about (200) megs
-		;; HR:60
-		float MemoryUsageRefreshTimeS = 60	;; time between updating the cache. 30 - (60) - 600
-
+		int MemoryUsageBestGuess = 3000000000	;; Guess that we will use about 200 megs
+		float MemoryUsageRefreshTimeS = 100	;; time between updating the cache.
+		
 		flag PerformanceDisableDoodads = false
-		;; HR:false
-		flag PerformanceDisableDecals = true
-
+		flag PerformanceDisableDecals = false
+		
 		;; Resource Caching weights: these weights are normalized to percentages of total memory. 
 		;;  E.g. if the weights add up to 200, a weight of 20 would mean use 10% of the total cache.
-		int ResourceCacheTextureRAMWeight = 1000;;300;;150
-		int ResourceCacheAudioRAMWeight = 50
-		int ResourceCacheNiAVObjRAMWeight = 360;;180
-		int ResourceCacheNiSeqRAMWeight = 240;;120
-		int ResourceCacheDirectoryRAMWeight = 10
-		int ResourceCacheDataFileRAMWeight = 60;;30
-		int ResourceCacheTextFileRAMWeight = 20;;10
-		int ResourceCacheCursorRAMWeight = 10
-		int ResourceCacheMapRAMWeight = 100;;50
-		int ResourceCacheFilmRAMWeight = 10
-		int ResourceCacheIndexFileRAMWeight = 10
-		int ResourceCacheTextGeometryRAMWeight = 10
-		int ResourceCacheRawFileRAMWeight = 10
-		int ResourceCacheVideoRAMWeight = 5
-		int ResourceCacheTrueTypeRAMWeight = 25
-		int ResourceCachePercentOfTotalRAM = 150;;100
+		int ResourceCacheTextureRAMWeight = 550
+		int ResourceCacheAudioRAMWeight = 100
+		int ResourceCacheNiAVObjRAMWeight = 600
+		int ResourceCacheNiSeqRAMWeight = 600
+		int ResourceCacheDirectoryRAMWeight = 200
+		int ResourceCacheDataFileRAMWeight = 200
+		int ResourceCacheTextFileRAMWeight = 300
+		int ResourceCacheCursorRAMWeight = 300
+		int ResourceCacheMapRAMWeight = 400
+		int ResourceCacheFilmRAMWeight = 300
+		int ResourceCacheIndexFileRAMWeight = 400
+		int ResourceCacheTextGeometryRAMWeight = 400
+		int ResourceCacheRawFileRAMWeight = 400
+		int ResourceCacheVideoRAMWeight = 600
+		int ResourceCacheTrueTypeRAMWeight = 550
+		int ResourceCachePercentOfTotalRAM = 500
 		
-		int ResourceCacheTextureVRAMWeight = 800;;240;;120
-		int ResourceCacheAudioVRAMWeight = 0;;10
-		int ResourceCacheNiAVObjVRAMWeight = 300;;150
-		int ResourceCacheNiSeqVRAMWeight = 200;;100
-		int ResourceCacheDirectoryVRAMWeight = 0
-		int ResourceCacheDataFileVRAMWeight = 0
-		int ResourceCacheTextFileVRAMWeight = 10
-		int ResourceCacheCursorVRAMWeight = 0
-		int ResourceCacheMapVRAMWeight = 0
+		int ResourceCacheTextureVRAMWeight = 700
+		int ResourceCacheAudioVRAMWeight = 100
+		int ResourceCacheNiAVObjVRAMWeight = 600
+		int ResourceCacheNiSeqVRAMWeight = 600
+		int ResourceCacheDirectoryVRAMWeight = 100
+		int ResourceCacheDataFileVRAMWeight = 100
+		int ResourceCacheTextFileVRAMWeight = 300
+		int ResourceCacheCursorVRAMWeight = 300
+		int ResourceCacheMapVRAMWeight = 100
 		int ResourceCacheFilmVRAMWeight = 0
-		int ResourceCacheIndexFileVRAMWeight = 0
-		int ResourceCacheTextGeometryVRAMWeight = 10
-		int ResourceCacheRawFileVRAMWeight = 0
-		int ResourceCacheVideoVRAMWeight = 0
-		int ResourceCacheTrueTypeVRAMWeight = 0;;25
-		int ResourceCachePercentOfTotalVRAM = 150;;100
+		int ResourceCacheIndexFileVRAMWeight = 300
+		int ResourceCacheTextGeometryVRAMWeight = 500
+		int ResourceCacheRawFileVRAMWeight = 100
+		int ResourceCacheVideoVRAMWeight = 100
+		int ResourceCacheTrueTypeVRAMWeight = 550
+		int ResourceCachePercentOfTotalVRAM = 300
 
 		flag ResourceNoNiObjects = false
 		flag ResourceNoNiTextures = false
@@ -315,7 +311,7 @@
 		;;;;;; diagnostics
 		;; display UI logging (toggleable via hotkey)
 		flag UIDisplayLogging = false
-		int UIWarningMemory = 4000000;;HR:3000000
+		int UIWarningMemory = 3000000
 		float UITextureSwapsRatio = 2
 		flag DebugModelVEs = false
 		

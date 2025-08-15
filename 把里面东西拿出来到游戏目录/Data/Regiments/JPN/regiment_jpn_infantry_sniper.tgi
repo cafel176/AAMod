@@ -1,6 +1,6 @@
 [Thing Template=AAJPNOrganizationInfantry]
 {
-	IDS = regiment_jpn_infantry_sniper3
+	IDS = regiment_jpn_infantry_sniper
 	editor_name = "#regiment_rus_infantry_sniper_editor_name"
 	name = "#regiment_rus_infantry_sniper_name"
 	

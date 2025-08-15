@@ -51,5 +51,8 @@
 	{	
 		[Property]
 		property_ids = antiaircraft_company
+
+		[Property]
+		property_IDS = trailblazing
 	}
 }

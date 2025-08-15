@@ -17,7 +17,6 @@
 	float	AudioSpeechVolume = 1.000000
 	float	AudioMusicVolume = 0.000000
 	flag	EditorNewMapAutoDoodify = false
-	int	LastFilmIndex = 17
 	flag	MetaGameUIShowHelpPopup = false
 	int	AFKTime = 30
 	flag	FirstRun = false
