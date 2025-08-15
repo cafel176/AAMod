@@ -1,0 +1,94 @@
+[Property Template=SharedProperty]
+{
+	IDS = tech_thing_corp_tech_tankbattle
+	name = ""
+	icon = null
+	action_button_icon = null
+
+	is_technology = true
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = tech_thing_corp_tech_special
+	name = ""
+	icon = null
+	action_button_icon = null
+
+	is_technology = true
+}
+
+[Template ThingCorpTech Template=Actor]
+{
+	name = "#thing_currency_resource_name"
+	category = UNIT
+	
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+
+	[Placement]
+	placement_group_IDS = group_special
+
+	[View]
+	{
+		resource_prefix = ThingCurrencyResource/ThingCurrencyResource
+		shadow_type = none
+		shadow_texture = null
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+    	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 1
+					
+		soft_shape = RECT
+		rect_width = 1
+		rect_height = 1
+	}
+}
+
+[Thing template=ThingCorpTech]
+{
+	IDS = thing_corp_tech	
+}
+
+[Thing template=ThingCorpTech]
+{
+	IDS = thing_corp_tech_tankbattle
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = corpshq		
+	}	
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = tech_thing_corp_tech_tankbattle
+	}
+}
+
+[Thing template=ThingCorpTech]
+{
+	IDS = thing_corp_tech_special
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = corpshq		
+	}
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = tech_thing_corp_tech_special
+	}	
+}

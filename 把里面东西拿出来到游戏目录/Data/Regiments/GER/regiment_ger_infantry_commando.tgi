@@ -1,0 +1,75 @@
+[Thing Template=AAGEROrganizationInfantry]
+{
+	IDS = regiment_ger_infantry_commando
+	name = "#regiment_ger_infantry_commando_name"
+	editor_name = "#regiment_ger_infantry_commando_editor_name"
+
+	[DetectionComponent]
+	{
+		detection_range = 27
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 35
+		
+		[Upkeep]
+		ammo = 5
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = recon	
+		
+		[Property]
+		property_IDS = trailblazing		
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GER/GERInfantry/GERInfantry
+		icon = /UI/Game/RegimentButtons/IconInfantryCommando.png
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_recon_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_recon_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_recon_attack
+
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+	
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		recruit_full = true
+		
+		[Slot]	;; front
+		element_IDS = ger_infantry
+		
+		[Slot]	;; rear guard 1
+		element_IDS = ger_infantry_mg
+
+		[Slot]	;; rear guard 2
+		element_IDS = ger_infantry_sniper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = null
+	
+		[Slot]	;; flank
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_infantry_co
+	}
+}

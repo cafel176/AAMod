@@ -1,0 +1,88 @@
+
+;;---------------------------------------------- RUSTankCO Unit --------
+
+
+[Template RUSTankCO Template=AAUnitRUSVehicleMediumTank]
+{
+	name = "#rus_tank_co_Thing_name"
+	
+	[BodyComponent]
+	{
+		health = 440
+		defense = 5
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3.5
+		acceleration = 3
+		turn_radians_per_sec = 2
+		
+		[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_01	
+	  	}
+	}
+	
+	[ElementComponent]
+	resupply_rate = 0.15
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = captain
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+		check_damage_resistance = true
+
+		[Ability template=AATurretAttackLocal]
+		{
+			
+			[AbilityDefinition Template=AAMediumTankGun]
+			{				
+				name = "#rus_tank_co_AbilityDefinition_name"
+				recharge_time = 6
+				range = 18
+				area = 1
+
+				[Effect Template=APDamageEffect]
+				amount = 65
+				
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+			
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = rus_cannon_medium
+			
+			}
+		}
+	}
+	
+	[View]
+	{
+		resource_prefix = RUSTankCO/RUSTankCO
+
+		portrait_ids = rus_tank_co_portrait	
+	
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = RUSTankCO/RUSTankCORecoil1.kf
+		}
+	}
+}
+
+[Thing Template=RUSTankCO]
+{
+	IDS = rus_tank_co2
+	editor_name = "#rus_tank_co_Thing_editor_name"
+}
+
