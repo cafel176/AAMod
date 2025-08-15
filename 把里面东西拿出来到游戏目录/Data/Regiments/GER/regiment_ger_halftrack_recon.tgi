@@ -11,10 +11,10 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 35
 		
 		[Upkeep]	
-		oil = 2
+		oil = 3
 	}
 
 
@@ -51,10 +51,7 @@
 		property_ids = mechanized_company
 
 	        [Property]
-		property_IDS = recon	
-		
-		[Property]
-		property_IDS = trailblazing		
+		property_IDS = recon		
 	
 	}
 }

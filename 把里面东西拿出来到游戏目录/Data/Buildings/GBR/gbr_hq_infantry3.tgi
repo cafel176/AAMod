@@ -119,9 +119,6 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_engineer3
-		
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_aa3
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_heavy3

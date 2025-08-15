@@ -122,13 +122,10 @@
 		actor_ids = regiment_rus_engineer3
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_aa3
+		actor_ids = regiment_rus_conscript3
 
 		[RecruitActor]
 		actor_ids = regiment_rus_infantry_sniper3
-
-		[RecruitActor]
-		actor_ids = regiment_rus_conscript3
 	}
 		
 	[ResearchComponent]

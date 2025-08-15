@@ -114,18 +114,12 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_halftrack_artillery3
-		
-		[RecruitActor]
-		actor_ids = regiment_jpn_tankette3
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_tank_light3
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_mechanized3
 			
 		[RecruitActor]
 		actor_ids = regiment_jpn_halftrack_aa3
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tankette3
 	}
 
 

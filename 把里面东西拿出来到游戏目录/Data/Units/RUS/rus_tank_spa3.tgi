@@ -3,7 +3,7 @@
 	[BodyComponent]
 	{
 		health = 330
-		defense = 9
+		defense = 10
 	}
 	
 	[MoverComponent]
@@ -45,15 +45,15 @@
 			{				
 				name = "#rus_tank_spa_AbilityDefinition_name"
 				recharge_time = 9
-				range = 60
-				area = 8
+				range = 50
+				area = 6
 				max_targets = 8
 					
 				[Flags] 
 				bombard = true
 				
 				[Effect Template=BlastDamageEffect]
-				amount = 65
+				amount = 55
 
 				[Effect Template=MoraleLossEffect]
 				amount = 0.8

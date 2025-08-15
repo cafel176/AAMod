@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 200
-		defense = 6
+		defense = 5
 	}
 	
 	[MoverComponent]

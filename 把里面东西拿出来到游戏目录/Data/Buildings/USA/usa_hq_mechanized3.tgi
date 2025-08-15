@@ -116,12 +116,6 @@
 		actor_ids = regiment_usa_halftrack_artillery3
 
 		[RecruitActor]
-		actor_ids = regiment_usa_tank_light3
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_mechanized3
-
-		[RecruitActor]
 		actor_ids = regiment_usa_halftrack_aa3
 	}
 

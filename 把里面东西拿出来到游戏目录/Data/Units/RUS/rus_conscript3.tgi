@@ -16,7 +16,12 @@
 	{
 		speed_max = 3
 	}
-		
+	
+	[ElementComponent]
+	{
+		required_properties = tech_conscription
+	}
+	
 	[PropertiesComponent]
 	{
 		[Property]

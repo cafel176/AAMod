@@ -119,16 +119,13 @@
 		actor_ids = regiment_usa_engineer3
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_aa3
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_sniper
-
-		[RecruitActor]
 		actor_ids = regiment_usa_infantry_assault3
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_flame3
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_sniper
 	}
 
 	[ResearchComponent]

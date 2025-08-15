@@ -99,7 +99,7 @@
 				
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 14
+				amount = 10
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_mg_heavy

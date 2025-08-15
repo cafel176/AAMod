@@ -114,12 +114,6 @@
 			
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_artillery3
-		
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_light3
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_mechanized3
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_aa3

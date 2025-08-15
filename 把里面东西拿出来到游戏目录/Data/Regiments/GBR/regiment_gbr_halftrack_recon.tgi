@@ -11,10 +11,10 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 35
 		
 		[Upkeep]		
-		oil = 2
+		oil = 3
 	}
 
 
@@ -52,9 +52,6 @@
 
 	        [Property]
 		property_IDS = recon	
-		
-		[Property]
-		property_IDS = trailblazing		
 	
 	}
 }

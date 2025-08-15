@@ -36,8 +36,8 @@
 		
 	[BodyComponent]
 	{
-		health = 225
-		defense = 2
+		health = 330
+		defense = 10
 	}
 
 	[ElementComponent]
