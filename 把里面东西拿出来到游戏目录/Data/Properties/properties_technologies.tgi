@@ -696,13 +696,13 @@
 [Property Template=AATechnology]
 {
 	IDS = tech_saboteur
-	name = "#properties_technologies_tech_saboteur_name"
+	name = "#saboteur_name"
 	icon = PropertyIcons/IconPropertyAttack.png
 	action_button_icon = TechIcons/IconSaboteur.png
 	
 	required_properties = hq
 
-	description = "#properties_technologies_tech_saboteur_description"
+	description = "#saboteur_name"
 }
 
 /*

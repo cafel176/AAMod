@@ -30,7 +30,7 @@
 	[MobileDeploymentComponent]
 	{
 	
-		unpack_to_actor_ids = jpn_airfield
+		unpack_to_actor_ids = jpn_airfield3
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0

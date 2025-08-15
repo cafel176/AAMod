@@ -10,7 +10,7 @@
 		money = 85
 		
 		[Upkeep]
-		ammo = 10
+		ammo = 15
 	}
 
 	[View]
@@ -39,13 +39,13 @@
 		element_IDS = gbr_infantry_AT3
 
 		[Slot]	;; rear guard 2
-		element_IDS = gbr_infantry_mortar3
+		element_IDS = gbr_infantry_mg
 		
 		[Slot]	;; rear guard 3
-		element_IDS = gbr_infantry_mg
+		element_IDS = gbr_infantry_mortar3
 	
 		[Slot]	;; flank
-		element_IDS = gbr_infantry_mg
+		element_IDS = gbr_infantry_mortar3
 		
 		[Slot]	;; captain
 		element_IDS = gbr_infantry_co

@@ -4,10 +4,8 @@
 	float	CameraScaleZoom = 2.600000
 	flag	ViewShowElapsedGameTime = true
 	flag	CameraRotate = true
-	int	ResolutionX = 2560
-	int	ResolutionY = 1600
-	flag	ResolutionWindowed = true
-	flag	ResolutionCoopFullscreenMode = true
+	int	ResolutionX = 1920
+	int	ResolutionY = 1080
 	int	UIMessageLogMaximumLines = 15
 	int	UIMessageLogFadeTime = 20000
 	flag	UIEventFilterEngagementMessages = true

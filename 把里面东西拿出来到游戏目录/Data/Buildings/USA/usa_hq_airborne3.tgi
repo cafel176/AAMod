@@ -58,7 +58,7 @@
 		money = 250
 
 		[Production]
-		money = 20
+		money = 25
 		ammo = 10
 		oil = 0
 		unit_limit_provided = 3
@@ -94,7 +94,10 @@
 		property_IDS = economic_building
 		
 		[Property]
-		property_ids = mg		
+		property_ids = mg	
+
+		[Property]
+		property_ids = ammo	
 	}
 
 	[RecruitComponent]

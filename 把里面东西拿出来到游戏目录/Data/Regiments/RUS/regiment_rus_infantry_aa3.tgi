@@ -35,13 +35,13 @@
 		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = gbr_halftrack_aa3
+		element_IDS = rus_halftrack_aa3
 	
 		[Slot]	;; support
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = gbr_car_armored_co3
+		element_IDS = rus_car_armored_co3
 	}
 	
 	[PropertiesComponent]

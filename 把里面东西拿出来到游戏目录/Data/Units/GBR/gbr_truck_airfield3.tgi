@@ -24,7 +24,7 @@
 	required_properties = air_support
 	
 	[MobileDeploymentComponent]
-	unpack_to_actor_ids = gbr_airfield
+	unpack_to_actor_ids = gbr_airfield3
 	packed_position_offset = 0,0
 	packed_orientation = 1,0
 

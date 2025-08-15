@@ -56,8 +56,8 @@
 		float ViewPrecacheMultiplier = 0	
 		flag TerrainSpecularEnabled = false
 		;; flag ResolutionWindowed is defaulted by the code (false)
-		int ResolutionX = 1024
-		int ResolutionY = 768
+		int ResolutionX = 1920
+		int ResolutionY = 1080
 		;; if ResolutionCoopFullscreenMode is true, the game runs in a borderless window exactly
 		;; the size of the screen in the resolution Windows is in. The game will not change the
 		;; resolution of the screen if ResolutionCoopFullscreenMode is true, and ResolutionX and Y
