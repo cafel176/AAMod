@@ -83,7 +83,7 @@
 				bombard = true
 				
 				[Effect Template=BlastDamageEffect]
-				amount = 60
+				amount = 55
 
 				[Effect Template=MoraleLossEffect]
 				amount = 0.82

@@ -125,9 +125,6 @@
 		actor_ids = regiment_jpn_infantry_banzai3
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_sniper
-
-		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_commando3
 	}
 		

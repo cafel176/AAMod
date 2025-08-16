@@ -125,9 +125,6 @@
 		actor_ids = regiment_ger_infantry_goliath3
 
 		[RecruitActor]
-		actor_ids = regiment_ger_infantry_sniper
-
-		[RecruitActor]
 		actor_ids = regiment_ger_infantry_commando
 	}
 	
