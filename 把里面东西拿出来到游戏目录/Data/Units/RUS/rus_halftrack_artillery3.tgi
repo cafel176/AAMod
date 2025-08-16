@@ -42,7 +42,7 @@
 				max_targets = 8
 					
 				[Effect Template=BlastDamageEffect]
-				amount = 45
+				amount = 40
 				
 				[Effect Template=MoraleLossEffect]
 				amount = 0.65
