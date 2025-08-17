@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_charactercomponent_aa.tgi
-Copyright © 2004 TimeGate Studios
+Copyright ?2004 TimeGate Studios
 
 DESCRIPTION:  Templates for AA Character Components
 
@@ -2227,6 +2227,12 @@ USAGE:
 	[AspectAnimationSet Template = AspectAnimationSetInfantryKneel]
 
 	[AspectAnimationSet Template = AspectAnimationSetInfantryProne]
+
+	[Animation Template=SummonAnimation] 
+	{
+		IDS = summon1
+		kf = /Shared/Animations/Units/InfantryMortar/Landing.kf
+	}
 }
 
 ;;--------------  ANTI-TANK INFANTRY (BAZOOKA) CHARACTER COMPONENT -----------
@@ -2730,6 +2736,12 @@ USAGE:
 	kf = /Shared/Animations/Units/InfantryAT/Jog.kf
 
 	[AspectAnimationSet Template = AspectAnimationSetInfantryATKneel]
+
+	[Animation Template=SummonAnimation] 
+	{
+		IDS = summon1
+		kf = /Shared/Animations/Units/InfantryMortar/Landing.kf
+	}
 }
 
 ;;-------------------  ANTI-TANK INFANTRY (RPG) CHARACTER COMPONENT ---------------
@@ -3481,6 +3493,12 @@ USAGE:
 	kf = /Shared/Animations/Units/InfantryRPG/Jog.kf
 
 	[AspectAnimationSet Template = AspectAnimationSetInfantryRPGKneel]
+
+	[Animation Template=SummonAnimation] 
+	{
+		IDS = summon1
+		kf = /Shared/Animations/Units/InfantryMortar/Landing.kf
+	}
 }
 
 ;;--------------  HEAVY MACHINE-GUN INFANTRY CHARACTER COMPONENT -----------
