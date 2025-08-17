@@ -19,7 +19,6 @@
 		money = 12
 		ammo = 5
 		oil = 8
-		unit_limit_provided = 3
 	}
 
 	[ElementComponent]
