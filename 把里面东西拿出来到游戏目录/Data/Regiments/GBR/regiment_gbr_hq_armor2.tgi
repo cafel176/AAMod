@@ -16,6 +16,12 @@
 	{
 		[Property]
 		property_ids = money
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil
 	}
 		
 	[View]
