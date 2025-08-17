@@ -5,7 +5,7 @@
 
 [Thing Template=AAUnitGERVehicleJeep]
 {
-	IDS = ger_car_armored_co3
+	IDS = ger_car_armored_recon
 	name = "#ger_car_armored_co_Thing_name"
 	editor_name = "#ger_car_armored_co_Thing_editor_name"
 
@@ -21,7 +21,12 @@
 		acceleration = 4
 	}
 
+	
 	[ElementComponent]
+	{
+		morale_value = 40
+	}
+
 	
 	[PropertiesComponent]
 	{

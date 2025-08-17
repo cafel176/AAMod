@@ -4,7 +4,7 @@
 
 [Thing Template=AAUnitUSAVehicleJeep]
 {
-	IDS = usa_car_armored_co3
+	IDS = usa_car_armored_recon
 	name = "#usa_car_armored_co_Thing_name"
 	editor_name = "#usa_car_armored_co_Thing_editor_name"
 
@@ -21,6 +21,9 @@
 	}
 
 	[ElementComponent]
+	{
+		morale_value = 40
+	}
 	
 	[PropertiesComponent]
 	{

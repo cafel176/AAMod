@@ -4,7 +4,7 @@
 
 [Thing Template=AAUnitGBRVehicleJeep]
 {
-	IDS = gbr_car_armored_co3
+	IDS = gbr_car_armored_recon
 	name = "#gbr_car_armored_co_Thing_name"
 	editor_name = "#gbr_car_armored_co_Thing_editor_name"
 
@@ -20,6 +20,11 @@
 		acceleration = 4
 	}
 	
+	[ElementComponent]
+	{
+		morale_value = 40
+	}
+
 	[PerformerComponent]
 	{
 		[Turret]

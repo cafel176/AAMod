@@ -6,7 +6,7 @@
 
 [Thing Template=AAUnitJPNVehicleJeep]
 {
-	IDS = jpn_car_armored_co3
+	IDS = jpn_car_armored_recon
 	name = "#jpn_car_armored_co_Thing_name"
 	editor_name = "#jpn_car_armored_co_Thing_editor_name"
 
@@ -28,7 +28,12 @@
 		}
 	}
 
+	
 	[ElementComponent]
+	{
+		morale_value = 40
+	}
+
 	
 	[PropertiesComponent]
 	{
