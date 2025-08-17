@@ -61,7 +61,6 @@
 		money = 25
 		ammo = 10
 		oil = 10
-		unit_limit_provided = 4
 	}
 
 	[PerformerComponent]
