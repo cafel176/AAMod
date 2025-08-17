@@ -94,13 +94,7 @@
 		property_IDS = economic_building
 		
 		[Property]
-		property_ids = mg		
-
-		[Property]
-		property_ids = ammo
-
-		[Property]
-		property_ids = oil	
+		property_ids = mg
 	}
 	
 	[RecruitComponent]

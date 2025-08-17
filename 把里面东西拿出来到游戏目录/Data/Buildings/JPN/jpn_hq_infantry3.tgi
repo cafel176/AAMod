@@ -96,12 +96,6 @@
 		
 		[Property]
 		property_ids = mg	
-
-		[Property]
-		property_ids = ammo
-
-		[Property]
-		property_ids = oil		
 	}
 
 	[RecruitComponent]
