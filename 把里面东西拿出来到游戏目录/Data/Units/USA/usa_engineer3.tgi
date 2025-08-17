@@ -55,6 +55,12 @@
 		
 		[Property]
 		property_IDS = combat_unit
+		
+		[Property]
+		property_IDS = garand_semi_automatic_rifle
+		
+		[Property]
+		property_IDS = engineer		
 	}
 	
 	[PerformerComponent]
