@@ -10,10 +10,10 @@
 		defense = 15
 	}
 	
-	[MoverComponent]
-		
+	[MoverComponent]		
 	{
-		speed_max = 3.1
+		speed_max = 3.5
+		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
@@ -54,7 +54,7 @@
 			{				
 				name = "#rus_tank_destroyer_AbilityDefinition_name"
 				recharge_time = 6
-				range = 25
+				range = 26
 				
 				[Effect Template=APDamageEffect]
 				amount = 75

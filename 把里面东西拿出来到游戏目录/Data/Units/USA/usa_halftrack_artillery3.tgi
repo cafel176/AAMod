@@ -43,10 +43,10 @@
 				max_targets = 8
 					
 				[Effect Template=BlastDamageEffect]
-				amount = 45
+				amount = 50
 				
 				[Effect Template=MoraleLossEffect]
-				amount = .65
+				amount = .75
 				
 				[Flags] 
 				bombard = true

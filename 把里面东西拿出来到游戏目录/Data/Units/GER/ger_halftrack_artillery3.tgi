@@ -74,7 +74,7 @@
 				amount = 40
 				
 				[Effect Template=MoraleLossEffect]
-				amount = .65
+				amount = .75
 				
 				[Flags] 
 				bombard = true

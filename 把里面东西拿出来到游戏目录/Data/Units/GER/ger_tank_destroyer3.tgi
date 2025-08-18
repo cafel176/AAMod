@@ -12,7 +12,8 @@
 	
 	[MoverComponent]
 	{
-		speed_max = 3.1
+		speed_max = 3.5
+		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{

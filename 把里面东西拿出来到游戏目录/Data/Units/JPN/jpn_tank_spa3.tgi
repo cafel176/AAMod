@@ -75,7 +75,7 @@
 			{				
 				name = "#jpn_tank_spa_AbilityDefinition_name"
 				recharge_time = 9
-				range = 50
+				range = 55
 				area = 6
 				max_targets = 8
 					
@@ -86,7 +86,7 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				amount = 0.82
+				amount = 1.25
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

@@ -9,7 +9,7 @@
 	attenuation_factor_max = 0.25
 	max_targets = 10
 
-	range = 50
+	range = 45
 	recharge_time = 10
 	reload_time = 0.0
 									
@@ -17,7 +17,7 @@
 	amount = 35
 
 	[Effect Template=MoraleLossEffect]
-	amount = 0.2
+	amount = 0.25
 	
 	[WhenDo template=FXC_PlaySFX]
 	audio_ids = rus_rocket_truck

@@ -17,7 +17,7 @@
 	amount = 25
 
 	[Effect Template=MoraleLossEffect]
-	amount = 0.16
+	amount = 0.15
 	
 	[WhenDo template=FXC_PlaySFX]
 	audio_ids = rus_rocket_truck

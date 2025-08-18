@@ -12,7 +12,7 @@
 	
 	[MoverComponent]	
 	{
-		speed_max = 3.4
+		speed_max = 3.5
 		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
@@ -54,7 +54,7 @@
 			{				
 				name = "#jpn_tank_destroyer_AbilityDefinition_name"
 				recharge_time = 6
-				range = 24
+				range = 26
 				
 				[Effect Template=APDamageEffect]
 				amount = 70

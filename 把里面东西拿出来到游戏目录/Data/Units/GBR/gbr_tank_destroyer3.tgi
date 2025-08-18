@@ -16,10 +16,10 @@
 		morale_value = 10
 	}
 
-	[MoverComponent]
-		
+	[MoverComponent]		
 	{
-		speed_max = 3.2
+		speed_max = 3.5
+		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{

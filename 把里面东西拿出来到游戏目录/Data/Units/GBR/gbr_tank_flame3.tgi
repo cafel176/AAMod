@@ -55,8 +55,8 @@
 
 	[MoverComponent]
 	{
-		speed_max = 3.3
-		acceleration = 2.2
+		speed_max = 3.5
+		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
@@ -92,7 +92,7 @@
 				audio_ids = gbr_flame_tank
 				
 				[Effect Template=MoraleLossEffect]
-				amount = .6
+				amount = .5
 				
 			}
 		}
