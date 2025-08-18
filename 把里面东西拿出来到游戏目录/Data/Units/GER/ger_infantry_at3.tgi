@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 150
-		defense = 3
+		defense = 1
 	}
 
 	[CharacterComponent Template=AAInfantryATCharacterComponent]
@@ -52,10 +52,10 @@
 			{				
 				name = "#ger_infantry_at_AbilityDefinition_name"
 				recharge_time = 5
-				range = 18
+				range = 16
 				
 				[Effect Template=APDamageEffect]
-				amount = 85
+				amount = 75
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_rocket

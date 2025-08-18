@@ -80,7 +80,7 @@
 			{
 				name = "#usa_infantry_mortar_AbilityDefinition_name"
 				recharge_time = 9
-				area = 3
+				area = 4
 				range = 30
 				max_targets = 8
 
@@ -91,7 +91,7 @@
 				amount = 40
 
 				[Effect Template=MoraleLossEffect]
-				amount = .55
+				amount = .5
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_artillery_light

@@ -53,7 +53,7 @@
 
 	[BodyComponent]
 	health = 150
-	defense = 3
+	defense = 2
 
 	[CharacterComponent Template=AAInfantryRPGCharacterComponent]
 
@@ -95,7 +95,7 @@
 				range = 16
 				
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 65
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_rocket

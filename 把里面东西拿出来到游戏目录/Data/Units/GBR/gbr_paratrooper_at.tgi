@@ -42,7 +42,7 @@
 
 	[BodyComponent]
 	health = 150
-	defense = 3
+	defense = 2
 
 	[CharacterComponent Template=AAInfantryATCharacterComponent]
 	
@@ -90,7 +90,7 @@
 				range = 16
 				
 				[Effect Template=APDamageEffect]
-				amount = 80
+				amount = 70
 
 				[Effect Template=EnchantmentEffect]
 				{

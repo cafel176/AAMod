@@ -86,7 +86,7 @@
 			{				
 				name = "#rus_infantry_mortar_AbilityDefinition_name"
 				recharge_time = 9
-				area = 3
+				area = 4
 				range = 30
 				max_targets = 8
 
