@@ -16,6 +16,10 @@
 
 		[Property]
 		property_ids = money
+
+
+		[Property]
+		property_ids = ammo
 	}
 
 	[Placement]
