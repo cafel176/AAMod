@@ -81,6 +81,10 @@
 	placeholder_IDS = placeholder_depot_unit
 	thing_IDS = thing_unit_limit_resource
 
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker_money
+	thing_IDS = gbr_bunker_money
+
 	[Badge]
 	badge_texture = GBR/GBRBadge01.png
 	
