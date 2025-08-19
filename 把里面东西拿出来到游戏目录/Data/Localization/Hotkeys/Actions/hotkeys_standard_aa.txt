@@ -128,6 +128,7 @@ map g game|action|verify "PropertyDataSelectCommand tech_military_gearup"
 map k game|action|verify "PropertyDataSelectCommand tech_marksmanship"
 map s game|action|verify "PropertyDataSelectCommand tech_sniper_rifle"
 map e game|action|verify "PropertyDataSelectCommand tech_special_forces"
+map t game|action|verify "PropertyDataSelectCommand tech_military_surplus"
 map b game|action|verify "PropertyDataSelectCommand tech_saboteur"
 map g game|action|verify "PropertyDataSelectCommand tech_goliath"
 map f game|action|verify "PropertyDataSelectCommand tech_infantry_flame"
@@ -260,6 +261,7 @@ map s game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper_gr
 map b game|action|verify "ActorDataSelectCommand regiment_gbr_saboteur3"
 
 # Mechanized HQ
+map r game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_recon"
 map f game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack"
 map f game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack2"
 map f game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack3"
@@ -359,6 +361,7 @@ map g game|action|verify "ActorDataSelectCommand regiment_ger_infantry_goliath3"
 map d game|action|verify "ActorDataSelectCommand regiment_ger_infantry_commando"
 
 # Mechanized HQ
+map r game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_recon"
 map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack"
 map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack2"
 map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack3"
@@ -470,6 +473,7 @@ map d game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_commando"
 map d game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_commando3"
 
 # Mechanized HQ
+map r game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_recon"
 map f game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack"
 map f game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack2"
 map f game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack3"
@@ -582,6 +586,7 @@ map s game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper"
 map s game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper3"
 
 # Mechanized HQ
+map r game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_recon"
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack"
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack2"
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack3"
@@ -626,7 +631,7 @@ map e game|action|verify "ActorDataSelectCommand regiment_rus_tank_medium3"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_tank_rocket_truck"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_tank_rocket_truck2"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_tank_rocket_truck3"
-map i game|action|verify "ActorDataSelectCommand regiment_rus_infantry_armored"
+map i game|action|verify "ActorDataSelectCommand regiment_rus_infantry_armored2"
 
 ### Nation - USA
 
@@ -699,6 +704,7 @@ map a game|action|verify "ActorDataSelectCommand regiment_usa_infantry_assault3"
 map s game|action|verify "ActorDataSelectCommand regiment_usa_infantry_sniper"
 
 # Mechanized HQ
+map r game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_recon"
 map f game|action|verify "ActorDataSelectCommand regiment_usa_halftrack"
 map f game|action|verify "ActorDataSelectCommand regiment_usa_halftrack2"
 map f game|action|verify "ActorDataSelectCommand regiment_usa_halftrack3"
