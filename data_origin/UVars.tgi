@@ -236,7 +236,7 @@
 		flag UIAbilityFloaterIsOpen = true
 
 			;; colors
-		point3	UIColorHighlight = 1,1,0 ;; color of text denoting an accelerator key
+		point3	UIColorHighlight = 1,0,0 ;; color of text denoting an accelerator key
 		point3	UIColorOptionValid = 0,1,0 ;; color of text denoting a valid option
 		point3	UIColorOptionInvalid = 1,0,0 ;; color of text denoting an invalid option
 		point3	UIColorPropertyTechnology = 1,1,0
