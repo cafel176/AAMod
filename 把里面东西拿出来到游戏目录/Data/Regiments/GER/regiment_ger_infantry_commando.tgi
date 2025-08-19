@@ -1,8 +1,8 @@
 [Thing Template=AAGEROrganizationInfantry]
 {
 	IDS = regiment_ger_infantry_commando
-	name = "#regiment_ger_infantry_commando_name"
-	editor_name = "#regiment_ger_infantry_commando_editor_name"
+	name = "#regiment_jpn_infantry_commando_name"
+	editor_name = "#regiment_jpn_infantry_commando_editor_name"
 
 	[DetectionComponent]
 	{
