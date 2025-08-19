@@ -480,6 +480,12 @@
 
 		[Property]
 		property_ids = air_support
+
+		[Property]
+		property_ids = ammo
+
+		[Property]
+		property_ids = oil
 	}
 
 	[RecruitComponent]
