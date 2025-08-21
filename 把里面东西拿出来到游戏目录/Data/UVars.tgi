@@ -2,15 +2,15 @@
 {
 		;;;;;; camera
 		
-		float	CameraScrollSpeed = 2
-		float	CameraScrollAcceleration = 4
-		float	CameraScrollSpeedMax = 10
-		int		CameraScrollEdgePadding = 10
+		float    CameraScrollSpeed = 10
+		float    CameraScrollAcceleration = 5
+		float    CameraScrollSpeedMax = 40
+		int    CameraScrollEdgePadding = 10
 		flag	CameraLocked = false
 		float	CameraScalePan = 10
 		float	CameraScalePitch = 10
 		float	CameraScaleYaw = 10
-		float	CameraScaleZoom = 0.5
+		float    CameraScaleZoom = 2.0
 		float	CameraRotateSpeed = 0.50	;; degrees/pixel (positive is clockwise)
 		float	SunScaleDimmer = 0.25
 		flag	CameraInformation = false
@@ -469,7 +469,7 @@
 		float	RenderTerrainTexPoolWarningSize = 0.08
 
 		int 	TerrainTexturePoolDesiredNumEntries = 120			;; Approximately 20% more than on-screen for max-zoom
-		int		TerrainTexturePoolDesiredTextureResolution = 128
+		int		TerrainTexturePoolDesiredTextureResolution. = 128
 		int		TerrainTexturePoolMinTextureResolution = 64
 		flag	TerrainTexturePoolRequiresAlpha = false
 		flag	TerrainTexturePoolGenerateMipMaps = true
