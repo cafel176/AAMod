@@ -677,6 +677,37 @@ USAGE:
 	proximity_desired = 12
 }
 
+[Template SellForMoney2 Template=RMCActorGroup]
+{
+	ids = sell_for_money2
+	name = "#template_rmc_aa_start_antiair_name"
+
+	kingdom_ids = null
+	show_ui = false
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+	
+	properties = tech_noupkeep
+
+	[RequiredObject]
+	object_ids = placeholder_bunker_money
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+
 [Template UnitLimit Template=RMCActorGroup]
 {
 	ids = start_unit
@@ -712,27 +743,37 @@ USAGE:
 	proximity_desired = 12
 }
 
-[Template MoneyBox1 Template=MoneyBox]
+[Template MoneyBoxSide1 Template=MoneyBox]
 {
 	kingdom_ids = side01
 }
 
-[Template SellForMoney1 Template=SellForMoney]
+[Template SellForMoneySide1 Template=SellForMoney]
 {
 	kingdom_ids = side01
 }
 
-[Template UnitLimit1 Template=UnitLimit]
+[Template SellForMoney2Side1 Template=SellForMoney2]
 {
 	kingdom_ids = side01
 }
 
-[Template MoneyBox2 Template=MoneyBox]
+[Template UnitLimitSide1 Template=UnitLimit]
+{
+	kingdom_ids = side01
+}
+
+[Template MoneyBoxSide2 Template=MoneyBox]
 {
 	kingdom_ids = side02
 }
 
-[Template SellForMoney2 Template=SellForMoney]
+[Template SellForMoneySide2 Template=SellForMoney]
+{
+	kingdom_ids = side02
+}
+
+[Template SellForMoney2Side2 Template=SellForMoney2]
 {
 	kingdom_ids = side02
 }
@@ -742,17 +783,22 @@ USAGE:
 	kingdom_ids = side02
 }
 
-[Template MoneyBox3 Template=MoneyBox]
+[Template MoneyBoxSide3 Template=MoneyBox]
 {
 	kingdom_ids = side03
 }
 
-[Template SellForMoney3 Template=SellForMoney]
+[Template SellForMoneySide3 Template=SellForMoney]
 {
 	kingdom_ids = side03
 }
 
-[Template UnitLimit3 Template=UnitLimit]
+[Template SellForMoney2Side3 Template=SellForMoney2]
+{
+	kingdom_ids = side03
+}
+
+[Template UnitLimitSide3 Template=UnitLimit]
 {
 	kingdom_ids = side03
 }

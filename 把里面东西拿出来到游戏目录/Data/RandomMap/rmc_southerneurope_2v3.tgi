@@ -1,9 +1,9 @@
 
 [RMC template=AAAllRMC]
 {
-	IDS = rmc_southerneurope3v4
-	name = "3V4  1 2 3 have buff"
-	description = "3V4  1 2 3 have buff"
+	IDS = rmc_southerneurope2v3
+	name = "2V3  1 2 have buff"
+	description = "2V3  1 2 have buff"
 	biome = chaparral
 
 /* 	TERRAIN			*/
@@ -89,13 +89,11 @@
 
 	[ActorGroup Template=MoneyBoxSide1]
 	[ActorGroup Template=SellForMoneySide1]
+	[ActorGroup Template=SellForMoney2Side1]
 	[ActorGroup Template=UnitLimitSide1]
 
 	[ActorGroup Template=MoneyBoxSide2]
 	[ActorGroup Template=SellForMoneySide2]
+	[ActorGroup Template=SellForMoney2Side2]
 	[ActorGroup Template=UnitLimitSide2]
-
-	[ActorGroup Template=MoneyBoxSide3]
-	[ActorGroup Template=SellForMoneySide3]
-	[ActorGroup Template=UnitLimitSide3]
 }

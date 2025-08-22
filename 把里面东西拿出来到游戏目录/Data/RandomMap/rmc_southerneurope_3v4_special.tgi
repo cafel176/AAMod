@@ -87,17 +87,17 @@
 	[ActorGroup Template=ArtilleryBatteries3]
 	apply_to_all_major_kingdoms = true
 
-	[ActorGroup Template=MoneyBox1]
-	[ActorGroup Template=SellForMoney1]
-	[ActorGroup Template=UnitLimit1]
+	[ActorGroup Template=MoneyBoxSide1]
+	[ActorGroup Template=SellForMoneySide1]
+	[ActorGroup Template=UnitLimitSide1]
 
-	[ActorGroup Template=MoneyBox2]
-	[ActorGroup Template=SellForMoney2]
-	[ActorGroup Template=UnitLimit2]
+	[ActorGroup Template=MoneyBoxSide2]
+	[ActorGroup Template=SellForMoneySide2]
+	[ActorGroup Template=UnitLimitSide2]
 
-	[ActorGroup Template=MoneyBox3]
-	[ActorGroup Template=SellForMoney3]
-	[ActorGroup Template=UnitLimit3]
+	[ActorGroup Template=MoneyBoxSide3]
+	[ActorGroup Template=SellForMoneySide3]
+	[ActorGroup Template=UnitLimitSide3]
 
 	[ActorGroup Template=SpecialTechBox]
 	apply_to_all_major_kingdoms = true
