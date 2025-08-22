@@ -108,30 +108,6 @@
 			{
 				money = 75
 			}
-		}	
-			
-		[ResearchItem]
-		{
-			property_IDS = tech_conscription
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_sniper_rifle
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
 		}				
 
 		[ResearchItem]
@@ -294,6 +270,33 @@
 	name = "#rus_corps_Thing_name"
 	editor_name = "#rus_corps_Thing_editor_name"
 	
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_conscription
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}				
+	}
+
 	[PropertiesComponent]
 	{
 		[Property]
@@ -400,7 +403,7 @@
 		actor_ids = rus_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = rus_truck_motor
+		actor_ids = rus_truck_motor2
 
 		[RecruitActor]
 		actor_ids = rus_truck_artillery
@@ -426,7 +429,31 @@
 	editor_name = "#rus_corps_Thing_editor_name"
 	
 	[ResearchComponent]
-	{
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_conscription
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}				
+
 		[ResearchItem]
 		{
 			property_IDS = tech_saboteur

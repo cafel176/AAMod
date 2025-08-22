@@ -132,12 +132,6 @@
 		}
 	}
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = rus_truck_corps2
-	}
-
 	[Size]
 	{
 		height = 2

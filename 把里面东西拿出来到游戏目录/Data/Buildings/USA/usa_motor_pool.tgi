@@ -92,12 +92,6 @@
 		}
 	}
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = usa_truck_corps2
-	}
-
 	[Size]
 	{
 		blocking_shape = SQUARE

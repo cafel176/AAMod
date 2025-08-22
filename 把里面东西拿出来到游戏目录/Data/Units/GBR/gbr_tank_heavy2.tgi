@@ -15,7 +15,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = gbr_motor_pool
+		required_structures = gbr_motor_pool2
 		required_properties = tech_heavy_tank
 	}
 

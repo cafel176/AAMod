@@ -4,7 +4,7 @@
 
 	[BodyComponent]
 	{
-		health = 300
+		health = 250
 		defense = 4
 	}
 	
@@ -64,7 +64,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool,  jpn_brigade_artillery
+		required_structures = jpn_motor_pool2,  jpn_brigade_artillery
 		morale_value = 20
 		resupply_rate = 0.1
 	}

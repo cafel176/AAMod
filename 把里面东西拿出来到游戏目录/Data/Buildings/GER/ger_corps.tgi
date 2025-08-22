@@ -156,18 +156,6 @@
 			{
 				money = 75
 			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_goliath
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
 		}		
 	}
 
@@ -321,6 +309,21 @@
 	name = "#ger_corps_Thing_name"
 	editor_name = "#ger_corps_Thing_editor_name"
 	
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_goliath
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+	}
+
 	[PropertiesComponent]
 	{
 		[Property]
@@ -418,7 +421,7 @@
 		actor_ids = ger_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = ger_truck_motor
+		actor_ids = ger_truck_motor2
 
 		[RecruitActor]
 		actor_ids = ger_truck_artillery
@@ -444,7 +447,19 @@
 	editor_name = "#ger_corps_Thing_editor_name"
 	
 	[ResearchComponent]
-	{		
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_goliath
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	
 		[ResearchItem]
 		{
 			property_IDS = tech_sniper_rifle
@@ -467,7 +482,7 @@
 			{
 				money = 150
 			}
-		}
+		}		
 	}
 
 	[PropertiesComponent]

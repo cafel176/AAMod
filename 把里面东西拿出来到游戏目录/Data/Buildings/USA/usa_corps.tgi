@@ -166,42 +166,6 @@
 			{
 				money = 100
 			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_garand_semi_auto
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}			
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_rifle_grenade
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_infantry_flame
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
 		}		
 	}	
 
@@ -361,6 +325,45 @@
 	name = "#usa_corps_Thing_name"
 	editor_name = "#usa_corps_Thing_editor_name"
 	
+	[ResearchComponent]
+	{				
+		[ResearchItem]
+		{
+			property_IDS = tech_garand_semi_auto
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}			
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_rifle_grenade
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_infantry_flame
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+	}
+
 	[EconomyComponent]
 	{
 		[Production]
@@ -465,7 +468,7 @@
 		actor_ids = usa_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = usa_truck_motor
+		actor_ids = usa_truck_motor2
 
 		[RecruitActor]
 		actor_ids = usa_truck_artillery
@@ -498,6 +501,42 @@
 
 	[ResearchComponent]
 	{				
+		[ResearchItem]
+		{
+			property_IDS = tech_garand_semi_auto
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}			
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_rifle_grenade
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_infantry_flame
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+				
 		[ResearchItem]
 		{
 			property_IDS = tech_sniper_rifle

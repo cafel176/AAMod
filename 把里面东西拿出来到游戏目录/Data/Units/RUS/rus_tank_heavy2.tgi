@@ -32,7 +32,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_motor_pool
+		required_structures = rus_motor_pool2
 		required_properties = tech_heavy_tank
 	}
 		

@@ -1,8 +1,8 @@
-[Thing Template=AAGERBuildingPackable]
+[Thing Template=AAJPNBuildingPackable]
 {
-	IDS = ger_motor_pool
-	name = "#ger_motor_pool_Thing_name"
-	editor_name = "#ger_motor_pool_Thing_editor_name"
+	IDS = jpn_motor_pool2
+	name = "#jpn_motor_pool_Thing_name"
+	editor_name = "#jpn_motor_pool_Thing_editor_name"
 
 	[BodyComponent]
 	health = 750
@@ -14,10 +14,10 @@
 		money = 125
 
 		[Production]
-		oil = 25
-		
+		oil = 20
+				
 		[Upkeep]
-		building_limit_consumed = 1	
+		building_limit_consumed = 1
 	}
 	
 	[PropertiesComponent]
@@ -37,43 +37,7 @@
 		[ResearchItem]
 		{
 			property_IDS = tech_diesel_engines
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-
-		[ResearchItem]
-		{
-			property_IDS = tech_panzerfaust
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_schurzen
 			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_heavy_tank
-			type = GLOBAL	
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
@@ -92,6 +56,12 @@
 		}
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = jpn_truck_corps2
+	}
+
 	[Size]
 	{
 		height = 2
@@ -101,11 +71,11 @@
 
 	[View]
 	{
-		resource_prefix = GERMotorPool/GERMotorPool
+		resource_prefix = JPNMotorPool/JPNMotorPool
 		icon = /UI/Game/BuildingButtons/IconMotorPool.png
-		
+
 		[TextureSearchPath]
-		path = /Units/GER/GERTruckBedless
+		path = /Units/JPN/JPNCarArmoredCO
 
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
@@ -130,10 +100,19 @@
 			audio_ids = motor_pool_select
 		}
 		
+		;;----- Spot Lights ----------------------
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = spotlight_02
+			location = spotlight_ae_01
+			attached = true
+		}
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
 			vfx_ids = spotlight_03
-			location = spotlight_ae_01
+			location = spotlight_ae_02
 			attached = true
 		}
 		

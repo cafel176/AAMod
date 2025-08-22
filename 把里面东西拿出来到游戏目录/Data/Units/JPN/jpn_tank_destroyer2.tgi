@@ -32,7 +32,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool,  jpn_brigade_artillery
+		required_structures = jpn_motor_pool2,  jpn_brigade_artillery
 		morale_value = 20
 	}	
 	
@@ -56,7 +56,7 @@
 			{				
 				name = "#jpn_tank_destroyer_AbilityDefinition_name"
 				recharge_time = 6
-				range = 23
+				range = 26
 				
 				[Effect Template=APDamageEffect]
 				amount = 85

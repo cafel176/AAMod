@@ -124,18 +124,6 @@
 
 		[ResearchItem]
 		{
-			property_IDS = tech_sniper_rifle
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
 			property_IDS = tech_military_surplus
 			type = GLOBAL	
 			research_time = 60
@@ -334,6 +322,21 @@
 	name = "#jpn_corps_Thing_name"
 	editor_name = "#jpn_corps_Thing_editor_name"
 	
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+
 	[PropertiesComponent]
 	{
 		[Property]
@@ -426,7 +429,7 @@
 		actor_ids = jpn_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = jpn_truck_motor
+		actor_ids = jpn_truck_motor2
 
 		[RecruitActor]
 		actor_ids = jpn_truck_artillery
@@ -451,6 +454,21 @@
 	name = "#jpn_corps_Thing_name"
 	editor_name = "#jpn_corps_Thing_editor_name"
 	
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+
 	[PropertiesComponent]
 	{
 		[Property]

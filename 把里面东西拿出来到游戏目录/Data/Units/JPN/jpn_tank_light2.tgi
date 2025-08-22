@@ -59,7 +59,7 @@
 				area = 1
 
 				[Effect Template=APDamageEffect]
-				amount = 40
+				amount = 45
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

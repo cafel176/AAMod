@@ -1,8 +1,9 @@
-[Thing Template=AAGERBuildingPackable]
+
+[Thing Template=AARUSBuildingPackable]
 {
-	IDS = ger_motor_pool
-	name = "#ger_motor_pool_Thing_name"
-	editor_name = "#ger_motor_pool_Thing_editor_name"
+	IDS = rus_motor_pool2
+	name = "#rus_motor_pool_Thing_name"
+	editor_name = "#rus_motor_pool_Thing_editor_name"
 
 	[BodyComponent]
 	health = 750
@@ -14,10 +15,10 @@
 		money = 125
 
 		[Production]
-		oil = 25
+		oil = 20
 		
 		[Upkeep]
-		building_limit_consumed = 1	
+		building_limit_consumed = 1
 	}
 	
 	[PropertiesComponent]
@@ -26,7 +27,7 @@
 		property_IDS = motor_pool
 
 		[Property]
-		property_IDS = economic_building	
+		property_IDS = economic_building
 
 		[Property]
 		property_IDS = oil
@@ -37,38 +38,26 @@
 		[ResearchItem]
 		{
 			property_IDS = tech_diesel_engines
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-
-		[ResearchItem]
-		{
-			property_IDS = tech_panzerfaust
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_schurzen
 			type = GLOBAL
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 150
+				money = 100
 			}
 		}
+			
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}			
 
 		[ResearchItem]
 		{
@@ -92,6 +81,12 @@
 		}
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_corps2
+	}
+
 	[Size]
 	{
 		height = 2
@@ -101,12 +96,12 @@
 
 	[View]
 	{
-		resource_prefix = GERMotorPool/GERMotorPool
+		resource_prefix = RUSMotorPool/RUSMotorPool
 		icon = /UI/Game/BuildingButtons/IconMotorPool.png
-		
-		[TextureSearchPath]
-		path = /Units/GER/GERTruckBedless
 
+		[TextureSearchPath]
+		path = /Units/RUS/RUSRocketTruck
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
 			vfx_ids = ground_depot_dirt
@@ -130,9 +125,11 @@
 			audio_ids = motor_pool_select
 		}
 		
+		;;----- Spot Lights ----------------------
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_03
+			vfx_ids = spotlight_02_bright
 			location = spotlight_ae_01
 			attached = true
 		}
@@ -160,10 +157,37 @@
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = door_large
-			location = door_04
+			vfx_ids = window_small
+			location = window_01
 			attached = true
 		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_02
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_03
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_04
+			attached = true
+		}
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
 	}
 
 	[WhenEnter Template=FXC_PlaySFX]
@@ -171,10 +195,5 @@
 		actor_state = structure_packing
 		audio_ids = pack_7s_sfx
 	}
-	
-	[WhenEnter Template=FXC_PlaySFX]
-	{
-		actor_state = structure_unpacking
-		audio_ids = unpack_7s_sfx
-	}
+
 }

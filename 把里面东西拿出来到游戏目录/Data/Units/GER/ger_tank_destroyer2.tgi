@@ -32,7 +32,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = ger_motor_pool
+		required_structures = ger_motor_pool2
 		required_properties = tech_heavy_tank
 		morale_value = 20
 	}
@@ -56,7 +56,7 @@
 			{				
 				name = "#ger_tank_destroyer_AbilityDefinition_name"
 				recharge_time = 6
-				range = 24
+				range = 26
 				
 				[Effect Template=APDamageEffect]
 				amount = 110

@@ -1,8 +1,8 @@
-[Thing Template=AAGERBuildingPackable]
+[Thing Template=AAGBRBuildingPackable]
 {
-	IDS = ger_motor_pool
-	name = "#ger_motor_pool_Thing_name"
-	editor_name = "#ger_motor_pool_Thing_editor_name"
+	IDS = gbr_motor_pool2
+	name = "#gbr_motor_pool_Thing_name"
+	editor_name = "#gbr_motor_pool_Thing_editor_name"
 
 	[BodyComponent]
 	health = 750
@@ -11,10 +11,10 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 125
+		money = 115
 
 		[Production]
-		oil = 25
+		oil = 20
 		
 		[Upkeep]
 		building_limit_consumed = 1	
@@ -33,11 +33,23 @@
 	}
 	
 	[ResearchComponent]
-	{		
+	{
 		[ResearchItem]
 		{
 			property_IDS = tech_diesel_engines
-			type = GLOBAL	
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
@@ -45,31 +57,7 @@
 				money = 100
 			}
 		}	
-
-		[ResearchItem]
-		{
-			property_IDS = tech_panzerfaust
-			type = GLOBAL	
-			research_time = 60
 		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_schurzen
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
 		[ResearchItem]
 		{
 			property_IDS = tech_heavy_tank
@@ -81,6 +69,18 @@
 				money = 100
 			}
 		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_flame
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
 	}
 
 	[DenizenComponent]
@@ -92,21 +92,23 @@
 		}
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = gbr_truck_corps2
+	}
+
 	[Size]
 	{
-		height = 2
 		blocking_shape = SQUARE
 		square_size = 8
 	}
 
 	[View]
 	{
-		resource_prefix = GERMotorPool/GERMotorPool
+		resource_prefix = GBRMotorPool/GBRMotorPool
 		icon = /UI/Game/BuildingButtons/IconMotorPool.png
 		
-		[TextureSearchPath]
-		path = /Units/GER/GERTruckBedless
-
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
 			vfx_ids = ground_depot_dirt
@@ -130,10 +132,19 @@
 			audio_ids = motor_pool_select
 		}
 		
+		;----- Lights -----
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = spotlight_02
+			location = spotlight_ae_01
+			attached = true
+		}
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
 			vfx_ids = spotlight_03
-			location = spotlight_ae_01
+			location = spotlight_ae_02
 			attached = true
 		}
 		

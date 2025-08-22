@@ -80,12 +80,6 @@
 		}
 	}
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = jpn_truck_corps2
-	}
-
 	[Size]
 	{
 		height = 2

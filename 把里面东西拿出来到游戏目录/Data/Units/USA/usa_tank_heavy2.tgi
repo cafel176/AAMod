@@ -33,7 +33,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = usa_motor_pool
+		required_structures = usa_motor_pool2
 		required_properties = tech_heavy_tank
 	}
 	

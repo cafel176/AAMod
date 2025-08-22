@@ -104,12 +104,6 @@
 		}
 	}
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = gbr_truck_corps2
-	}
-
 	[Size]
 	{
 		blocking_shape = SQUARE

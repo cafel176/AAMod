@@ -444,7 +444,7 @@
 		actor_ids = gbr_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = gbr_truck_motor
+		actor_ids = gbr_truck_motor2
 
 		[RecruitActor]
 		actor_ids = gbr_truck_artillery

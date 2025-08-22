@@ -1,6 +1,6 @@
 [Thing Template=AAGERBuildingPackable]
 {
-	IDS = ger_motor_pool
+	IDS = ger_motor_pool2
 	name = "#ger_motor_pool_Thing_name"
 	editor_name = "#ger_motor_pool_Thing_editor_name"
 
@@ -44,18 +44,6 @@
 			{
 				money = 100
 			}
-		}	
-
-		[ResearchItem]
-		{
-			property_IDS = tech_panzerfaust
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
 		}
 		
 		[ResearchItem]
@@ -90,6 +78,12 @@
 			creation_offset = 0.0, 0.3
 			deployment_offset = -10.0, 0.3
 		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_corps2
 	}
 
 	[Size]
