@@ -35,7 +35,7 @@
 	}
 	
 	[ElementComponent]
-	resupply_rate = 0.16
+	resupply_rate = 0.165
 	
 	[PropertiesComponent]
 	{
