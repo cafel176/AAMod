@@ -18,6 +18,7 @@
 	float	AudioMusicVolume = 0.000000
 	flag	EditorNewMapAutoDoodify = false
 	flag	MetaGameUIShowHelpPopup = false
+	string	HotkeyConfiguration = spica_hotkey_config
 	int	AFKTime = 30
 	flag	FirstRun = false
 	flag	UICampaignConfirmDependentCampaign = false
