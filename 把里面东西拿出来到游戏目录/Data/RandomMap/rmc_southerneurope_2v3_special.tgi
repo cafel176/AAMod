@@ -87,11 +87,11 @@
 	[ActorGroup Template=ArtilleryBatteries3]
 	apply_to_all_major_kingdoms = true
 
-	[ActorGroup Template=MoneyBoxSide1]
+	[ActorGroup Template=MoneyBox2v3Side1]
 	[ActorGroup Template=SellForMoney2v3Side1]
 	[ActorGroup Template=UnitLimitSide1]
 
-	[ActorGroup Template=MoneyBoxSide2]
+	[ActorGroup Template=MoneyBox2v3Side2]
 	[ActorGroup Template=SellForMoney2v3Side2]
 	[ActorGroup Template=UnitLimitSide2]
 

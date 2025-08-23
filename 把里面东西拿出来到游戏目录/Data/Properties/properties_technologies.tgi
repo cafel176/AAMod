@@ -611,8 +611,8 @@
 
 [Property Template=AATechnology]
 {
-	IDS = tech_military_surplus2
-	name = "#Buff_name"
+	IDS = tech_buff2v3
+	name = "#2v3Buff_name"
 	icon = PropertyIcons/IconPropertyEconomic.png
 	action_button_icon = TechIcons/IconGearUp.png
 
@@ -622,6 +622,22 @@
 	{
 		[Production Template=ProductionList]
         		money = 7
+	}
+}
+
+[Property Template=AATechnology]
+{
+	IDS = tech_buff3v4
+	name = "#3v4Buff_name"
+	icon = PropertyIcons/IconPropertyEconomic.png
+	action_button_icon = TechIcons/IconGearUp.png
+
+	required_properties = money
+	
+	[Modifier Template=ResourceProductionModifier]
+	{
+		[Production Template=ProductionList]
+        		money = 4
 	}
 }
 

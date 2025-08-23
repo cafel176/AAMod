@@ -611,9 +611,9 @@ USAGE:
 	proximity_desired = 12
 }
 
-[Template MoneyBox Template=RMCActorGroup]
+[Template MoneyBox2v3 Template=RMCActorGroup]
 {
-	ids = start_moneybox
+	ids = start_moneybox2v3
 	name = "#template_rmc_aa_start_bunkers_name"
 
 	kingdom_ids = null
@@ -630,7 +630,42 @@ USAGE:
 	starting_location_weight = 10000
 
 	[RequiredObject]
-	object_ids = placeholder_depot_moneybox
+	object_ids = placeholder_depot_moneybox2v3
+	position = 0,0
+	
+	;; this will prevent these bunkers from going anywhere near 12m of any corps HQ (one of
+	;; which happens to be corps paired with this bunker). However this also means that the
+	;; desired distance will be applied with every corps (not what we want). The problem
+	;; is the bunker group is applied to all kingdoms and you can't specify a group
+	;; restriction with the corps that goes with this group. Fortunately, the desired
+	;; proximity of the restriction is negated due to the large starting_location_weight
+	;; which still puts these with the appropriate corps.
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+
+[Template MoneyBox3v4 Template=RMCActorGroup]
+{
+	ids = start_moneybox3v4
+	name = "#template_rmc_aa_start_bunkers_name"
+
+	kingdom_ids = null
+	show_ui = false
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_moneybox3v4
 	position = 0,0
 	
 	;; this will prevent these bunkers from going anywhere near 12m of any corps HQ (one of
@@ -743,7 +778,12 @@ USAGE:
 	proximity_desired = 12
 }
 
-[Template MoneyBoxSide1 Template=MoneyBox]
+[Template MoneyBox2v3Side1 Template=MoneyBox2v3]
+{
+	kingdom_ids = side01
+}
+
+[Template MoneyBox3v4Side1 Template=MoneyBox3v4]
 {
 	kingdom_ids = side01
 }
@@ -763,7 +803,12 @@ USAGE:
 	kingdom_ids = side01
 }
 
-[Template MoneyBoxSide2 Template=MoneyBox]
+[Template MoneyBox2v3Side2 Template=MoneyBox2v3]
+{
+	kingdom_ids = side02
+}
+
+[Template MoneyBox3v4Side2 Template=MoneyBox3v4]
 {
 	kingdom_ids = side02
 }
@@ -783,7 +828,12 @@ USAGE:
 	kingdom_ids = side02
 }
 
-[Template MoneyBoxSide3 Template=MoneyBox]
+[Template MoneyBox2v3Side3 Template=MoneyBox2v3]
+{
+	kingdom_ids = side03
+}
+
+[Template MoneyBox3v4Side3 Template=MoneyBox3v4]
 {
 	kingdom_ids = side03
 }

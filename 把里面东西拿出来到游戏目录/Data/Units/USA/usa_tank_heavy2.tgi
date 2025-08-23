@@ -35,6 +35,7 @@
 	{
 		required_structures = usa_motor_pool2
 		required_properties = tech_heavy_tank
+		morale_value = 22
 	}
 	
 	[PropertiesComponent]

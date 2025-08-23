@@ -75,8 +75,12 @@
 	thing_IDS = thing_corp_tech_special
 
 	[Placeholder]
-	placeholder_IDS = placeholder_depot_moneybox
-	thing_IDS = thing_currency_resource_rmc
+	placeholder_IDS = placeholder_depot_moneybox2v3
+	thing_IDS = thing_currency_resource_rmc2v3
+
+	[Placeholder]
+	placeholder_IDS = placeholder_depot_moneybox3v4
+	thing_IDS = thing_currency_resource_rmc3v4
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_unit

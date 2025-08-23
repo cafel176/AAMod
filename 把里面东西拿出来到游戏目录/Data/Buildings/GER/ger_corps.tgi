@@ -383,7 +383,7 @@
 	[EconomyComponent]
 	{
 		[Production]
-		money = 27
+		money = 25
 	}
 
 	[PropertiesComponent]

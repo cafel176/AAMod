@@ -81,7 +81,7 @@
 				
 				name = "#gbr_tank_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				range = 16
+				range = 14
 				recharge_time = 3
 				area = 2
 				max_targets = 4

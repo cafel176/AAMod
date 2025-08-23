@@ -1,6 +1,6 @@
 [Thing Template=Placeholder]
 {
-	IDS = placeholder_depot_moneybox
+	IDS = placeholder_depot_moneybox3v4
 	name = "#placeholder_depot_supply_name"
 
 	[Flags]

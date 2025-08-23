@@ -47,11 +47,22 @@
 
 [Thing template=ThingMoneyBox]
 {
-	IDS = thing_currency_resource_rmc
+	IDS = thing_currency_resource_rmc2v3
 
 	[StructureComponent]
 	{
 		[TechnologyProperty]
-		property_ids = tech_military_surplus2
+		property_ids = tech_buff2v3
+	}
+}
+
+[Thing template=ThingMoneyBox]
+{
+	IDS = thing_currency_resource_rmc3v4
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = tech_buff3v4
 	}
 }

@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 250
+		money = 275
 		
 		[Upkeep]
 		ammo = 25
@@ -52,7 +52,7 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = rus_car_armored_co2
+		element_IDS = rus_tank_co2
 	}
 	
 	[ExperienceComponent template=AAArmorExperienceComponent]
