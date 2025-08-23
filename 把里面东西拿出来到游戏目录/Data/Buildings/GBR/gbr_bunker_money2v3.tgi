@@ -1,6 +1,6 @@
 [Thing Template=AAGBRBuildingConstructed]
 {
-	IDS = gbr_bunker_money
+	IDS = gbr_bunker_money2v3
 	name = "#gbr_bunker_aa_Thing_name"
 	editor_name = "#gbr_bunker_aa_Thing_editor_name"
 	
@@ -15,7 +15,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 600
+		money = 1350
 	}
 
 	[Flags]

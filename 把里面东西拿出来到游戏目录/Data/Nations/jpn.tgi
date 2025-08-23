@@ -83,8 +83,12 @@
 	thing_IDS = thing_unit_limit_resource
 
 	[Placeholder]
-	placeholder_IDS = placeholder_bunker_money
-	thing_IDS = jpn_bunker_money
+	placeholder_IDS = placeholder_bunker_money2v3
+	thing_IDS = jpn_bunker_money2v3
+
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker_money3v4
+	thing_IDS = jpn_bunker_money3v4
 
 	[Badge]
 	badge_texture = JPN/JPNBadge01.png

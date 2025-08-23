@@ -88,15 +88,15 @@
 	apply_to_all_major_kingdoms = true
 
 	[ActorGroup Template=MoneyBoxSide1]
-	[ActorGroup Template=SellForMoneySide1]
+	[ActorGroup Template=SellForMoney3v4Side1]
 	[ActorGroup Template=UnitLimitSide1]
 
 	[ActorGroup Template=MoneyBoxSide2]
-	[ActorGroup Template=SellForMoneySide2]
+	[ActorGroup Template=SellForMoney3v4Side2]
 	[ActorGroup Template=UnitLimitSide2]
 
 	[ActorGroup Template=MoneyBoxSide3]
-	[ActorGroup Template=SellForMoneySide3]
+	[ActorGroup Template=SellForMoney3v4Side3]
 	[ActorGroup Template=UnitLimitSide3]
 
 	[ActorGroup Template=SpecialTechBox]

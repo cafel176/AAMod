@@ -1,14 +1,12 @@
-[Thing Template=AAGERBuildingConstructed]
+[Thing Template=AAGBRBuildingConstructed]
 {
-	IDS = ger_bunker_money
-	name = "#ger_bunker_aa_Thing_name"
-	editor_name = "#ger_bunker_aa_Thing_editor_name"
-
+	IDS = gbr_bunker_money3v4
+	name = "#gbr_bunker_aa_Thing_name"
+	editor_name = "#gbr_bunker_aa_Thing_editor_name"
+	
 	[BodyComponent]
-	{
-		health = 1000
-	}
-
+	health = 1000
+	
 	[DetectionComponent]
 	{
 		detection_range = 25
@@ -17,7 +15,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 600
+		money = 900
 	}
 
 	[Flags]
@@ -30,11 +28,11 @@
 		[Turret]
 		{
 			turret_ids = Turret
-			offset = 0.071,-0.723	
-			
-			yaw_start_degrees = 0
-			yaw_rotation_range_degrees = 360
+			offset = -0.003,-0.131	
+
 			yaw_rotation_per_sec_degrees = 180
+			yaw_rotation_range_degrees = 360
+			yaw_start_degrees = 0
 
 			pitch_start_degrees = 45
 			pitch_rotation_range_start_degrees = -90
@@ -57,6 +55,7 @@
 	
 	[Size]
 	{
+		height = 2
 		blocking_shape = CIRCLE
 		blocking_radius = 2
 		
@@ -70,8 +69,26 @@
 	
 	[View]
 	{
-		resource_prefix = GERBunkerAA/GERBunkerAA
+		resource_prefix = GBRBunkerAA/GBRBunkerAA
 		icon = /UI/Game/BuildingButtons/IconBunkerAA.png
+								
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GBRBunkerAA/GBRBunkerAARecoil1.kf
+		}
+		
+		[Aspect Template=AAAspectDisabled]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GBRBunkerAA/GBRBunkerAADisabledRecoil1.kf
+		}
+		
+		[Aspect Template=AAAspectDeath]
 
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
@@ -90,24 +107,6 @@
 			vfx_ids = ground_bunker_snow
 			terrain_group_filter = snow
 		}
-		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERBunkerAA/GERBunkerAARecoil1.kf
-		}
-		
-		[Aspect Template=AAAspectDisabled]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERBunkerAA/GERBunkerAADisabledRecoil1.kf
-		}
-		
-		[Aspect Template=AAAspectDeath]
 		
 		[WhenSelected Template=FXC_PlaySFX]
 		{

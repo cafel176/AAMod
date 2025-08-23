@@ -585,7 +585,7 @@
 	[Modifier Template=ResourceProductionModifier]
 	{
 		[Production Template=ProductionList]
-        	money = 5
+        		money = 5
 	}
 }
 
@@ -601,7 +601,7 @@
 	[Modifier Template=ResourceProductionModifier]
 	{
 		[Production Template=ProductionList]
-        	money = 5
+        		money = 7
 	}
 }
 

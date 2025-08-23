@@ -1,6 +1,6 @@
 [Thing Template=Placeholder]
 {
-	IDS = placeholder_bunker_money
+	IDS = placeholder_bunker_money2v3
 	name = "#placeholder_bunker_antiaircraft_name"
 
 	[Flags]

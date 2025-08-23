@@ -83,8 +83,12 @@
 	thing_IDS = thing_unit_limit_resource
 
 	[Placeholder]
-	placeholder_IDS = placeholder_bunker_money
-	thing_IDS = rus_bunker_money
+	placeholder_IDS = placeholder_bunker_money2v3
+	thing_IDS = rus_bunker_money2v3
+
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker_money3v4
+	thing_IDS = rus_bunker_money3v4
 
 	[Badge]
 	badge_texture = RUS/RUSBadge01.png

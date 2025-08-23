@@ -1,8 +1,8 @@
-[Thing Template=AAUSABuildingConstructed]
+[Thing Template=AAGERBuildingConstructed]
 {
-	IDS = usa_bunker_money
-	name = "#usa_bunker_aa_Thing_name"
-	editor_name = "#usa_bunker_aa_Thing_editor_name"
+	IDS = ger_bunker_money2v3
+	name = "#ger_bunker_aa_Thing_name"
+	editor_name = "#ger_bunker_aa_Thing_editor_name"
 
 	[BodyComponent]
 	{
@@ -17,9 +17,9 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 600
+		money = 1350
 	}
-	
+
 	[Flags]
 	{
 		axis_locked = false
@@ -30,12 +30,11 @@
 		[Turret]
 		{
 			turret_ids = Turret
-			offset = 0.029,2.417
-
+			offset = 0.071,-0.723	
+			
 			yaw_start_degrees = 0
-			yaw_rotation_per_sec_degrees = 180
 			yaw_rotation_range_degrees = 360
-	
+			yaw_rotation_per_sec_degrees = 180
 
 			pitch_start_degrees = 45
 			pitch_rotation_range_start_degrees = -90
@@ -50,48 +49,29 @@
 		property_IDS = property_bunker_aa
 
 		[Property]
-		property_IDS = property_aa		
+		property_IDS = military_building
 
 		[Property]
-		property_ids = military_building
-	}	
+		property_IDS = property_aa		
+	}
 	
 	[Size]
 	{
-		height = 2
 		blocking_shape = CIRCLE
 		blocking_radius = 2
 		
 		soft_shape = CIRCLE
 		soft_radius = 2.1
 	}
-	
+
 	[Stance Template=StanceDisabled]
 	
 	[Stance Template=StanceDeath]
 	
 	[View]
 	{
-		resource_prefix = USABunkerAA/USABunkerAA
+		resource_prefix = GERBunkerAA/GERBunkerAA
 		icon = /UI/Game/BuildingButtons/IconBunkerAA.png
-		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = USABunkerAA/USABunkerAARecoil1.kf
-		}
-		
-		[Aspect Template=AAAspectDisabled]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = USABunkerAA/USABunkerAADisabledRecoil1.kf
-		}
-
-		[Aspect Template=AAAspectDeath]
 
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
@@ -110,6 +90,24 @@
 			vfx_ids = ground_bunker_snow
 			terrain_group_filter = snow
 		}
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERBunkerAA/GERBunkerAARecoil1.kf
+		}
+		
+		[Aspect Template=AAAspectDisabled]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERBunkerAA/GERBunkerAADisabledRecoil1.kf
+		}
+		
+		[Aspect Template=AAAspectDeath]
 		
 		[WhenSelected Template=FXC_PlaySFX]
 		{

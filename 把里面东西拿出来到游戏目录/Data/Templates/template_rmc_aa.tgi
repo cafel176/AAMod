@@ -646,9 +646,9 @@ USAGE:
 	proximity_desired = 12
 }
 
-[Template SellForMoney Template=RMCActorGroup]
+[Template SellForMoney2v3 Template=RMCActorGroup]
 {
-	ids = sell_for_money
+	ids = sell_for_money2v3
 	name = "#template_rmc_aa_start_antiair_name"
 
 	kingdom_ids = null
@@ -667,7 +667,7 @@ USAGE:
 	properties = tech_noupkeep
 
 	[RequiredObject]
-	object_ids = placeholder_bunker_money
+	object_ids = placeholder_bunker_money2v3
 	position = 0,0
 	
 	;; see comment in [MachineGunBunkers]
@@ -677,9 +677,9 @@ USAGE:
 	proximity_desired = 12
 }
 
-[Template SellForMoney2 Template=RMCActorGroup]
+[Template SellForMoney3v4 Template=RMCActorGroup]
 {
-	ids = sell_for_money2
+	ids = sell_for_money3v4
 	name = "#template_rmc_aa_start_antiair_name"
 
 	kingdom_ids = null
@@ -698,7 +698,7 @@ USAGE:
 	properties = tech_noupkeep
 
 	[RequiredObject]
-	object_ids = placeholder_bunker_money
+	object_ids = placeholder_bunker_money3v4
 	position = 0,0
 	
 	;; see comment in [MachineGunBunkers]
@@ -748,12 +748,12 @@ USAGE:
 	kingdom_ids = side01
 }
 
-[Template SellForMoneySide1 Template=SellForMoney]
+[Template SellForMoney2v3Side1 Template=SellForMoney2v3]
 {
 	kingdom_ids = side01
 }
 
-[Template SellForMoney2Side1 Template=SellForMoney2]
+[Template SellForMoney3v4Side1 Template=SellForMoney3v4]
 {
 	kingdom_ids = side01
 }
@@ -768,12 +768,12 @@ USAGE:
 	kingdom_ids = side02
 }
 
-[Template SellForMoneySide2 Template=SellForMoney]
+[Template SellForMoney2v3Side2 Template=SellForMoney2v3]
 {
 	kingdom_ids = side02
 }
 
-[Template SellForMoney2Side2 Template=SellForMoney2]
+[Template SellForMoney3v4Side2 Template=SellForMoney3v4]
 {
 	kingdom_ids = side02
 }
@@ -788,12 +788,12 @@ USAGE:
 	kingdom_ids = side03
 }
 
-[Template SellForMoneySide3 Template=SellForMoney]
+[Template SellForMoney2v3Side3 Template=SellForMoney2v3]
 {
 	kingdom_ids = side03
 }
 
-[Template SellForMoney2Side3 Template=SellForMoney2]
+[Template SellForMoney3v4Side3 Template=SellForMoney3v4]
 {
 	kingdom_ids = side03
 }
