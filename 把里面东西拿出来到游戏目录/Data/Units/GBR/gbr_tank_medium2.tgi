@@ -14,7 +14,7 @@
 	[ElementComponent]
 	{
 		required_structures = gbr_motor_pool2	
-		resupply_rate = 0.15
+		resupply_rate = 0.16
 	}
 
 	[MoverComponent]
