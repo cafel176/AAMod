@@ -1,8 +1,8 @@
 [Thing Template=AAGBROrganizationArmor]
 {	
 	IDS = regiment_gbr_tank_at
-	name = "AT Tank Regiment"
-	editor_name = "GBR Tank AT Regiment"
+	name = "#regiment_gbr_tank_destroyer_name"
+	editor_name = "#regiment_gbr_tank_destroyer_editor_name"
 
 	[EconomyComponent]
 	{

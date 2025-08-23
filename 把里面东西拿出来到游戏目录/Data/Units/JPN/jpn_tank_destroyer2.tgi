@@ -32,7 +32,8 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool2,  jpn_brigade_artillery
+		required_structures = jpn_motor_pool2
+		required_properties = tech_heavy_tank
 		morale_value = 20
 	}	
 	

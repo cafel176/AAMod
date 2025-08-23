@@ -1,8 +1,8 @@
 [Thing Template=AAUSAOrganizationArmor]
 {	
 	IDS = regiment_usa_tank_at
-	name = "AT Tank Regiment"
-	editor_name = "USA Tank AT Regiment"
+	name = "#regiment_usa_tank_destroyer_name"
+	editor_name = "#regiment_usa_tank_destroyer_editor_name"
 
 	[EconomyComponent]
 	{
