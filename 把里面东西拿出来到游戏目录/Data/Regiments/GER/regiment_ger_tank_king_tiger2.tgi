@@ -37,6 +37,7 @@
 	{	
 		layout_IDS = regiment_vehicle_light
 		entrenchment_time = 99999
+		control_range = 24
 
 		[Slot]	;; front
 		element_IDS = ger_tank_king_tiger2
