@@ -60,7 +60,7 @@
 				range = 26
 				
 				[Effect Template=APDamageEffect]
-				amount = 85
+				amount = 90
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -68,7 +68,7 @@
 					{
 					IDS = at_stun_jpn3
 					name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
-					duration = 1.75
+					duration = 2
 					enchantment_type = ench_type_generic
 					icon = /properties/PropertyIcons/IconPropertyMovement.png
 			

@@ -56,7 +56,7 @@
 		money = 250
 
 		[Production]
-		money = 28
+		money = 27
 		ammo = 25
 		oil = 15
 	}
