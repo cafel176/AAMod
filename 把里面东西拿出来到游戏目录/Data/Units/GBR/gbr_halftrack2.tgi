@@ -1,6 +1,7 @@
 [Template GBRHalftrack Inherit=AAUnitGBRVehicleHalftrack]
 {
 	[ElementComponent]
+	morale_value = 10
 	resupply_rate = 0.25
 
 	[BodyComponent]

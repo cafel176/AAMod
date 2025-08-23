@@ -351,6 +351,7 @@
 	IDS = rus_corps2
 	name = "#rus_corps_Thing_name"
 	editor_name = "#rus_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[ResearchComponent]
 	{		
@@ -427,6 +428,7 @@
 	IDS = rus_corps3
 	name = "#rus_corps_Thing_name"
 	editor_name = "#rus_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[ResearchComponent]
 	{		

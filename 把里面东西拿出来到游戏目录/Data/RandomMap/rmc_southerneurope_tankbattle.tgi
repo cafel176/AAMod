@@ -2,8 +2,8 @@
 [RMC template=AAAllRMC]
 {
 	IDS = rmc_southerneurope_tankbattle
-	name = "Tank Battle SouthernEurope"
-	description = "Tank Battle SouthernEurope"
+	name = "#Tank_Battle_SouthernEurope"
+	description = "#Tank_Battle_SouthernEurope"
 	biome = chaparral
 
 /* 	TERRAIN			*/

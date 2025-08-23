@@ -2,8 +2,8 @@
 [RMC template=AAAllRMC]
 {
 	IDS = rmc_southerneurope_special
-	name = "Special Southerneurope"
-	description = "Special Southerneurope"
+	name = "#Special_Southerneurope"
+	description = "#Special_Southerneurope"
 	biome = chaparral
 
 /* 	TERRAIN			*/

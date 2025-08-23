@@ -392,7 +392,8 @@
 	IDS = gbr_corps2
 	name = "#gbr_corps_Thing_name"
 	editor_name = "#gbr_corps_Thing_editor_name"
-	
+	description = "#corps_description"
+
 	[ResearchComponent]
 	{		
 		[ResearchItem]
@@ -469,6 +470,7 @@
 	IDS = gbr_corps3
 	name = "#gbr_corps_Thing_name"
 	editor_name = "#gbr_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[ResearchComponent]
 	{		

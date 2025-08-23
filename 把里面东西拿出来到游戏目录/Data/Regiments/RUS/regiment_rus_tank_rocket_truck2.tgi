@@ -11,7 +11,7 @@
 		
 		[Upkeep]
 		ammo = 20
-		oil = 15
+		oil = 20
 	}
 
 	[PropertiesComponent]
@@ -41,7 +41,7 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_heavy
 		recruit_time = 25
 
 		[Slot]	;; front

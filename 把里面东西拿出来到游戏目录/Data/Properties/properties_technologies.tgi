@@ -7,6 +7,26 @@
 	is_technology = true
 }
 
+[Property Template=AATechnology]
+{
+	IDS = tech_thing_corp_tech_tankbattle
+	name = "#tank_battle_name"
+	description = "#corps_description"
+	icon = PropertyIcons/IconPropertyNational.png
+
+	action_button_icon = null
+}
+
+[Property Template=AATechnology]
+{
+	IDS = tech_thing_corp_tech_special
+	name = "#special_mode_name"
+	description = "#corps_description"
+	icon = PropertyIcons/IconPropertyNational.png
+
+	action_button_icon = null
+}
+
 [Template AATechnologyAirplane Template=AATechnology]
 {
 	required_properties = aircraft
@@ -592,7 +612,7 @@
 [Property Template=AATechnology]
 {
 	IDS = tech_military_surplus2
-	name = "#properties_technologies_tech_military_surplus_name"
+	name = "#Buff_name"
 	icon = PropertyIcons/IconPropertyEconomic.png
 	action_button_icon = TechIcons/IconGearUp.png
 

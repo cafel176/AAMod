@@ -392,6 +392,7 @@
 	IDS = jpn_corps2
 	name = "#jpn_corps_Thing_name"
 	editor_name = "#jpn_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[PropertiesComponent]
 	{
@@ -453,6 +454,7 @@
 	IDS = jpn_corps3
 	name = "#jpn_corps_Thing_name"
 	editor_name = "#jpn_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[ResearchComponent]
 	{

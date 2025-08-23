@@ -2,8 +2,8 @@
 [RMC template=AAAllRMC]
 {
 	IDS = rmc_southerneurope2v3
-	name = "2V3  1 2 have buff"
-	description = "2V3  1 2 have buff"
+	name = "#2V3"
+	description = "#2V3"
 	biome = chaparral
 
 /* 	TERRAIN			*/

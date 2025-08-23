@@ -3,6 +3,7 @@
 	IDS = ger_bunker_money2v3
 	name = "#ger_bunker_aa_Thing_name"
 	editor_name = "#ger_bunker_aa_Thing_editor_name"
+	description = "#money_description"
 
 	[BodyComponent]
 	{

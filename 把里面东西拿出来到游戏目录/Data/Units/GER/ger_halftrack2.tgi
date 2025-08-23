@@ -1,6 +1,7 @@
 [Template GERHalftrack Inherit=AAUnitGERVehicleHalftrack]
 {
 	[ElementComponent]
+	morale_value = 10
 	resupply_rate = 0.25
 
 	[BodyComponent]

@@ -67,7 +67,7 @@
 	{
 		required_structures = gbr_brigade_artillery
 		required_properties = tech_heavy_tank
-		morale_value = 20
+		morale_value = 15
 		resupply_rate = 0.1
 	}
 

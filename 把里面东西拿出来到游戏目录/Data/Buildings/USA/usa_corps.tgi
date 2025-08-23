@@ -425,6 +425,7 @@
 	IDS = usa_corps2
 	name = "#usa_corps_Thing_name"
 	editor_name = "#usa_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[EconomyComponent]
 	{
@@ -492,6 +493,7 @@
 	IDS = usa_corps3
 	name = "#usa_corps_Thing_name"
 	editor_name = "#usa_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[EconomyComponent]
 	{

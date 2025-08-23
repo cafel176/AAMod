@@ -2,8 +2,8 @@
 [RMC template=AAAllRMC]
 {
 	IDS = rmc_northafrica_tankbattle
-	name = "Tank Battle North Africa"
-	description = "Tank Battle North Africa"
+	name = "#Tank_Battle_North_Africa"
+	description = "#Tank_Battle_North_Africa"
 	biome = desert
 
 /********************   TERRAIN    ********************/

@@ -2,8 +2,8 @@
 [RMC template=AAAllRMC]
 {
 	IDS = rmc_alaska_tankbattle
-	name = "Tank Battle Alaska"
-	description = "Tank Battle Alaska"
+	name = "#Tank_Battle_Alaska"
+	description = "#Tank_Battle_Alaska"
 	biome = arctic_tundra
 
 /********************    TERRAIN    ********************/

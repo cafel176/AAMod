@@ -378,7 +378,8 @@
 	IDS = ger_corps2
 	name = "#ger_corps_Thing_name"
 	editor_name = "#ger_corps_Thing_editor_name"
-	
+	description = "#corps_description"
+
 	[EconomyComponent]
 	{
 		[Production]
@@ -445,6 +446,7 @@
 	IDS = ger_corps3
 	name = "#ger_corps_Thing_name"
 	editor_name = "#ger_corps_Thing_editor_name"
+	description = "#corps_description"
 	
 	[ResearchComponent]
 	{	

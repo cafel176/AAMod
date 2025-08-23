@@ -3,7 +3,8 @@
 	IDS = gbr_bunker_money2v3
 	name = "#gbr_bunker_aa_Thing_name"
 	editor_name = "#gbr_bunker_aa_Thing_editor_name"
-	
+	description = "#money_description"
+
 	[BodyComponent]
 	health = 1000
 	
