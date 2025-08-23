@@ -7,11 +7,11 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 115
+		money = 100
 		
 		[Upkeep]
 		ammo = 15
-		oil = 15
+		oil = 10
 	}
 
 	[View]
@@ -35,14 +35,14 @@
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_heavy
 		recruit_time = 15
 
 		[Slot]	;; front
 		element_IDS = jpn_tank_light2
 	
 		[Slot]	;; support
-		element_IDS = jpn_tank_light2
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = jpn_tank_co2
