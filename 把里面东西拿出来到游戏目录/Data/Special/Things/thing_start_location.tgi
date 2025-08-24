@@ -19,7 +19,6 @@
 
 		[Production]
 		building_limit_provided = 20
-		unit_limit_provided = 20
 	}
 
 	[Placement]
