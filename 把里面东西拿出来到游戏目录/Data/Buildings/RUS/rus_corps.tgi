@@ -94,58 +94,7 @@
 		
 		[Property]
 		property_ids = mg		
-	}	
-	
-	[ResearchComponent]
-	{	
-		[ResearchItem]
-		{
-			property_IDS = tech_advanced_infantry_training
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}				
-
-		[ResearchItem]
-		{
-			property_IDS = tech_marksmanship
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-				[ResearchItem]
-		{
-			property_IDS = tech_military_surplus
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_machineguns
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	}	
+	}		
 
 	[Size]
 	{
@@ -271,7 +220,19 @@
 	editor_name = "#rus_corps_Thing_editor_name"
 	
 	[ResearchComponent]
-	{		
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+			
 		[ResearchItem]
 		{
 			property_IDS = tech_conscription
@@ -295,6 +256,30 @@
 				money = 100
 			}
 		}				
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+				[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
 	}
 
 	[PropertiesComponent]
@@ -354,10 +339,22 @@
 	description = "#corps_description"
 	
 	[ResearchComponent]
-	{		
+	{	
 		[ResearchItem]
 		{
-			property_IDS = tech_advanced_armor_training
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}				
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
 			type = GLOBAL	
 			research_time = 60
 		
@@ -365,7 +362,19 @@
 			{
 				money = 75
 			}
-		}		
+		}
+		
+				[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
 	}
 
 	[PropertiesComponent]
@@ -431,7 +440,19 @@
 	description = "#corps_description"
 	
 	[ResearchComponent]
-	{		
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+			
 		[ResearchItem]
 		{
 			property_IDS = tech_conscription
@@ -453,6 +474,30 @@
 			[ResearchCost Template=CostList]
 			{
 				money = 100
+			}
+		}				
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+				[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
 			}
 		}				
 

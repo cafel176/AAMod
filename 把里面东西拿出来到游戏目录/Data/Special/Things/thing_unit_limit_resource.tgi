@@ -6,9 +6,7 @@
 	
 	[EconomyComponent]
 	{
-		[Production]
-		building_limit_provided = 10
-		unit_limit_provided = 10
+
 	}
 	
 	[Flags]
